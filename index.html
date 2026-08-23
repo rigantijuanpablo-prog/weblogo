@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riganti, Geiler & Márquez Alluralde - Abogados</title>
+    <!-- Fuentes Corporativas de Élite -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- VARIABLES DE DISEÑO PREMIUM (ESTILO MARVAL & BECCAR VARELA) --- */
+        :root {
+            --color-primario: #070e1b;   /* Azul medianoche profundo */
+            --color-secundario: #c5a880; /* Dorado satinado institucional */
+            --color-fondo-claro: #f8fafc;/* Gris premium ultra limpio */
+            --color-texto-oscuro: #1e293b;
+            --color-texto-suave: #64748b; 
+            --fuente-titulos: 'Cinzel', serif;
+            --fuente-cuerpo: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fuente-cuerpo);
+            color: var(--color-texto-oscuro);
+            background-color: #ffffff;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ==========================================
+           NUEVOS ESTILOS: SECCIÓN FIN DE PÁGINA (INSTAGRAM)
+           ========================================== */
+               .seccion-cierre-marval {
+            position: relative;
+            background-size: cover;
+            
+            /* 1. 🚨 Fijamos el encuadre vertical en el centro exacto */
+            background-position: center center; 
+            
+            /* 2. 🚨 Elevamos drásticamente el padding a 260px arriba y 280px abajo */
+            padding: 260px 20px 280px 20px; 
+            
+            text-align: center;
+            color: #ffffff;
+            font-family: var(--fuente-cuerpo);
+        }
+
+        .contenido-cierre {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .subtitulo-cierre {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: var(--color-secundario);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .marca-redes {
+            font-size: 54px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            letter-spacing: -1px;
+            font-family: var(--fuente-titulos);
+        }
+
+        .descripcion-cierre {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            opacity: 0.95;
+        }
+
+        .btn-instagram {
+            display: inline-block;
+            background-color: var(--color-secundario);
+            color: var(--color-primario);
+            text-decoration: none;
+            padding: 14px 35px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-instagram:hover {
+            background-color: #b0936b;
+            transform: translateY(-2px);
+        }
+
+               /* --- DISEÑO SANEADO DE LA BARRA LATERAL --- */
+        .barra-flotante-contacto {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 2px; /* Espaciado limpio entre cajas */
+        }
+
+        .item-flotante {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #070e1b; /* Azul profundo original */
+            border-left: 2px solid #c5a880; /* Línea dorada satinada */
+            color: #ffffff;
+            text-decoration: none;
+            height: 50px;
+            min-width: 50px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+        }
+
+        .icono-flotante {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icono-flotante svg {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+       .texto-flotante {
+    white-space: nowrap;
+    padding: 0;
+    font-size: 13px;
+    font-family: var(--fuente-cuerpo);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    max-width: 0;
+    opacity: 0;
+             /* 🚨 REEMPLAZA ESTA LÍNEA PARA EL EFECTO SUAVE DE APPLE: */
+    transition: max-width 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease, opacity 0.2s ease;
+}
+
+        /* Hover Corporativo Inteligente */
+        .item-flotante:hover {
+            background-color: #c5a880;
+        }
+
+        .item-flotante:hover .icono-flotante svg {
+            color: #070e1b; /* Invierte el color del ícono al pasar el cursor */
+        }
+
+        .item-flotante:hover .texto-flotante {
+            max-width: 150px;
+            padding: 0 10px 0 20px;
+            opacity: 1;
+            color: #070e1b;
+        }
+
+        /* --- BARRA DE NAVEGACIÓN TRANSLÚCIDA CON BLUR --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(7, 14, 27, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(197, 168, 128, 0.12);
+            transition: all 0.4s ease;
+        }
+
+        /* --- BRANDING MINIMALISTA ABSOLUTO ARMONIZADO --- */
+        .marca-estudio {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-left: 10px;
+            transition: opacity 0.3s ease;
+            height: 100%;
+        }
+
+        .marca-estudio:hover {
+            opacity: 0.85;
+        }
+
+        .sigla-premium {
+            font-family: var(--fuente-titulos);
+            color: var(--color-secundario) !important;
+            font-size: 1.4rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            border-right: 1px solid rgba(197, 168, 128, 0.25);
+            padding-right: 20px;
+            line-height: 1;
+            user-select: none;
+        }
+
+        .nombre-estudio {
+            font-family: var(--fuente-titulos);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .nombre-estudio .apellido-principal {
+            display: block;
+            font-weight: 500;
+            font-size: 1.15rem;
+            letter-spacing: 1.5px;
+            line-height: 1.15;
+            color: #ffffff !important;
+        }
+
+        .nombre-estudio .apellido-secundario {
+            display: block;
+            font-weight: 300;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.75) !important;
+            margin-top: 4px;
+            line-height: 1.15;
+        }
+
+        /* --- ENLACES DE LA NAV --- */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 4px 0;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-secundario);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav ul li a:hover {
+            color: var(--color-secundario);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        /* --- PORTADA CON MÁSCARA ANGULAR ASIMÉTRICA --- */
+       .hero-principal {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            /* 🚨 AGREGA ESTA LÍNEA CLAVE PARA ALINEAR TODO EN EL CENTRO ABSOLUTO: */
+            align-items: center; 
+            
+            text-align: center;
+            padding: 140px 8% 180px 8%;
+            clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        }
+
+        .hero-principal h1 {
+            font-family: var(--fuente-titulos);
+            font-size: 3rem;
+            color: #ffffff;
+            font-weight: 400;
+            max-width: 950px;
+            line-height: 1.35;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+
+.hero-principal p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1.15rem;
+            font-weight: 300;
+            max-width: 700px;
+            text-align: center;          /* 🚨 Centra las líneas de las letras */
+            margin: 0 auto 45px auto;    /* 🚨 Centra el bloque entero horizontalmente */
+        }
+
+        .boton-premium {
+            display: inline-block;
+            padding: 16px 45px;
+            border: 1px solid var(--color-secundario);
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            background: transparent;
+        }
+
+        .boton-premium:hover {
+            background-color: var(--color-secundario);
+            color: var(--color-primario);
+            box-shadow: 0 15px 30px rgba(197, 168, 128, 0.2);
+        }
+
+        /* --- SECCIONES ESTRUCTURALES GENERALES --- */
+        section {
+            padding: 140px 12%;
+            clear: both;
+        }
+
+        .encabezado-seccion {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 90px auto;
+        }
+
+        .encabezado-seccion h2 {
+            font-family: var(--fuente-titulos);
+            font-size: 2.4rem;
+            color: var(--color-primario);
+            font-weight: 500;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .encabezado-seccion .linea-decorativa {
+            width: 40px;
+            height: 1px;
+            background-color: var(--color-secundario);
+            margin: 0 auto 25px auto;
+        }
+
+        .encabezado-seccion p {
+            color: var(--color-texto-suave);
+            font-size: 1rem;
+        }
+
+        /* --- CONTENEDORES INTERNOS --- */
+        .contenedor-estudio {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .texto-estudio p {
+            color: var(--color-texto-oscuro);
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+            text-align: justify;
+            font-weight: 300;
+        }
+
+        .lista-valores {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 35px;
+        }
+
+        .tarjeta-valor {
+            border-left: 2px solid var(--color-secundario);
+            padding-left: 25px;
+        }
+
+        .tarjeta-valor h4 {
+            font-family: var(--fuente-titulos);
+            font-size: 1.15rem;
+            color: var(--color-primario);
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .tarjeta-valor p {
+            color: var(--color-texto-suave);
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+.grid-corporativo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    height: auto; /* Nos aseguramos de que crezca libremente */
+}
+
+.tarjeta-corporativa {
+    background-color: #ffffff;
+    padding: 55px 40px;
+    border: 1px solid #e2e8f0;
+    /* 👇 ESTADO INICIAL PARA LA ANIMACIÓN (Empiezan invisibles y suben de golpe) */
+    opacity: 0;
+    transform: translateY(30px);
+ transition: opacity 0.8s ease-out, transform 0.8s ease-out, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* 👇 CLASE QUE ACTIVARÁ EL JAVASCRIPT AL HACER SCROLL */
+.tarjeta-corporativa.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tarjeta-corporativa:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-secundario);
+    box-shadow: 0 30px 60px rgba(7, 14, 27, 0.04);
+}
+
+.tarjeta-corporativa h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.tarjeta-corporativa p {
+    color: var(--color-texto-suave);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+        .contenedor-contacto {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 70px;
+        }
+
+        .info-contacto h3 {
+            font-family: var(--fuente-titulos);
+            font-size: 1.5rem;
+            color: var(--color-primario);
+            margin-bottom: 30px;
+        }
+
+        .bloque-dato {
+            margin-bottom: 25px;
+        }
+
+        .bloque-dato label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--color-secundario);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .bloque-dato p {
+            font-size: 0.95rem;
+        }
+
+        .formulario-contacto {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .campo-ancho {
+            grid-column: span 2;
+        }
+
+        .formulario-contacto input, .formulario-contacto textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            font-family: var(--fuente-cuerpo);
+            font-size: 0.85rem;
+            outline: none;
+            background-color: var(--color-fondo-claro);
+            transition: all 0.3s;
+        }
+
+        .formulario-contacto input:focus, .formulario-contacto textarea:focus {
+            border-color: var(--color-secundario);
+            background-color: #ffffff;
+        }
+
+        .boton-enviar {
+            grid-column: span 2;
+            padding: 16px;
+            background-color: var(--color-primario);
+            color: #ffffff;
+            border: none;
+            font-family: var(--fuente-cuerpo);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .boton-enviar:hover {
+            background-color: #1a2a44;
+        }
+.bloques-footer-fijo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .columna-footer-fija h4 {
+            font-family: var(--fuente-titulos);
+            color: var(--color-secundario);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .columna-footer-fija p, .columna-footer-fija ul li a {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        .columna-footer-fija ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .columna-footer-fija ul li {
+            margin-bottom: 10px;
+        }
+
+        .columna-footer-fija ul li a:hover {
+            color: var(--color-secundario);
+        }
+
+        @media (max-width: 992px) {
+            header { padding: 20px 5%; flex-direction: column; gap: 15px; }
+            nav ul { gap: 20px; }
+            section { padding: 100px 5%; }
+            .hero-principal { clip-path: none; -webkit-clip-path: none; padding-bottom: 100px; }
+            .contenedor-estudio, .contenedor-contacto { grid-template-columns: 1fr; gap: 50px; }
+            .formulario-contacto input, .formulario-contacto textarea, .boton-enviar { grid-column: span 2; }
+        }
+    </style>
+</head>
+<body>
+  <!-- BARRA FLOTANTE INTERACTIVA LATERAL PREMIUM (ESTILO RGM) -->
+    <div class="barra-flotante-contacto">
+        <!-- Ítem Correo (Sobre minimalista) -->
+        <a href="#contacto" class="item-flotante" title="Escribir Correo">
+            <span class="texto-flotante">CONTACTO</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+        </a>
+
+        <!-- Ítem Teléfono (Auricular corporativo) -->
+        <a href="tel:+541143215555" class="item-flotante" title="Llamar">
+            <span class="texto-flotante">LLAMAR</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+        </a>
+
+        <!-- Ítem Ubicación (Pin de mapa estilizado) -->
+        <a href="#contacto" class="item-flotante" title="Sede Central">
+            <span class="texto-flotante">UBICACIÓN</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+        </a>
+
+        <!-- Ítem Idioma / Consulta (Globo institucional) -->
+        <a href="#contacto" class="item-flotante" title="English Version">
+            <span class="texto-flotante idioma-texto">ENGLISH</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+        </a>
+    </div>
+    <header>
+                   /* ==========================================================================
+           LOGOTIPO PREMIUM RECTIFICADO (RENDERING DE ÉLITE CON ARCHIVO PNG)
+           ========================================================================== */
+        .logo-premium {
+            height: 48px;                 /* Altura institucional refinada */
+            width: 54px;                  /* Ancho exacto proporcional a tu imagen */
+            display: block;
+            flex-shrink: 0;               /* Evita que se comprima en menús Flexbox */ 
+            
+            /* Llamada directa a tu imagen física real */
+            background-image: url('logo-dorado-transparente.png'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+            /* Forzado de hardware: Obliga al navegador a dibujar el PNG con máxima definición */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+    <!-- ENCABEZADO PREMIUM TRANSLÚCIDO CON LOGO INTEGRADO -->
+    <header>
+        <a href="#" class="marca-estudio">
+            <!-- CONTENEDOR LIMPIO: Carga el PNG de fondo con tus estilos CSS de élite -->
+            <div class="logo-premium"></div>
+            
+            <!-- Estructura de apellidos en blanco puro de tu firma -->
+            <div class="nombre-estudio">
+                <span class="apellido-principal">RIGANTI, GEILER</span>
+                <span class="apellido-secundario">& MÁRQUEZ ALLURALDE</span>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#estudio">El Estudio</a></li>
+                <li><a href="#practicas">Prácticas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
+    <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        
+        <!-- El elemento de video con parámetros de forzado institucional -->
+        <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;">
+            <source src="video-rgma.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+
+        <!-- Capa oscura translúcida para garantizar el perfecto contraste de las letras blancas -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(7, 14, 27, 0.72), rgba(7, 14, 27, 0.88)); z-index: 2;"></div>
+
+        <!-- Textos institucionales equilibrados sobre el video ambiental -->
+       <div style="position: relative; z-index: 3; text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
+            <h1>Trayectoria Legal con una Perspectiva de Vanguardia</h1>
+            <p style="margin: 20px auto 40px auto; max-width: 750px; text-align: center; color: rgba(255, 255, 255, 0.75); font-size: 1.15rem; font-weight: 300; line-height: 1.6;">
+                Brindamos soluciones jurídicas estratégicas de alta complejidad para empresas tecnológicas, Pymes en proceso de transformación digital y protagonistas de la economía moderna.
+            </p>
+            
+            <a href="#contacto" class="boton-premium">Agendar consulta confidencial</a>
+        </div>
+    </section>
+
+  <section id="estudio">
+        <div class="encabezado-seccion">
+                       <h2>El Estudio</h2>
+            <div class="linea-decorativa"></div>
+            <p>Un compromiso absoluto con la excelencia técnica en la intersección entre el derecho empresarial tradicional y la innovación de vanguardia.</p>
+        </div>
+        <div class="contenedor-estudio">
+            
+            <!-- Columna Izquierda: Manifiesto Institucional - Bufete de Alta Especialización -->
+            <div class="texto-estudio" style="font-family: var(--fuente-cuerpo); font-size: 1rem; line-height: 1.8; color: #333333; font-weight: 300;">
+                <p style="margin-bottom: 25px;">
+                    Somos un <strong>bufete de alta especialización</strong> corporativa orientado a estructurar, potenciar y proteger los negocios del futuro. Nos distanciamos de los modelos de atención masiva e impersonal: operamos bajo una estructura de práctica selectiva, lo que nos permite garantizar que cada asunto encomendado reciba el análisis minucioso y el involucramiento directo de nuestros socios fundadores.
+                </p>
+                <p style="margin-bottom: 0;">
+                    Nuestra identidad combina la rigurosidad jurídica institucional con la agilidad que exigen los mercados modernos. Diseñamos arquitectura legal y fiduciaria a medida, planificaciones fiscales dinámicas, estrategias de propiedad intelectual transfronteriza y litigaciones de alta complejidad, proporcionando soluciones de alcance nacional con proyección regional.
+                </p>
+            </div>
+            
+            <!-- Columna Derecha: Pilares Estratégicos -->
+            <div class="lista-valores">
+                <div class="tarjeta-valor">
+                    <h4>Rigurosidad Técnica</h4>
+                    <p>Cada dictamen y estrategia procesal es analizada al máximo detalle analítico por nuestros especialistas en entornos complejos.</p>
+                </div>
+                <div class="tarjeta-valor">
+                    <h4>Transición Digital</h4>
+                    <p>Guiamos a las Pymes en la adopción segura de herramientas de IA, gobernanza de datos y reestructuración legal hacia la nueva economía.</p>
+                </div>
+                <!-- Pilar 3 -->
+                <div class="tarjeta-valor">
+                    <h4>Múltiples Jurisdicciones y Mercosur</h4>
+                    <p>Brindamos asesoramiento en múltiples jurisdicciones, estructurando soluciones adaptadas a las normativas de cada provincia y los mercados de la región.</p>
+                </div>
+                <!-- Pilar 4 -->
+                <div class="tarjeta-valor">
+                    <h4>Transparencia e Integridad</h4>
+                    <p>Estrecha confidencialidad y una ética inquebrantable en cada gestión institucional y defensa estratégica encomendada.</p>
+                </div>
+            </div> <!-- Cierra lista-valores -->
+        </div> <!-- Cierra contenedor-estudio -->
+    </section> <!-- Cierra la sección completa -->
+
+<!-- SECCIÓN ÁREAS DE PRÁCTICA -->
+<section id="practicas" style="background-color: var(--color-fondo-claro);">
+    <div class="encabezado-seccion">
+        <h2>Áreas de Práctica</h2>
+        <div class="linea-decorativa"></div>
+        <p>Asesoramiento jurídico de vanguardia enfocado en tecnología, innovación, salud y el ecosistema digital en Argentina.</p>
+    </div>
+    
+    <div class="grid-corporativo">
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta-corporativa">
+            <h3><a href="startups.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Startups y Negocios Digitales ➔</a></h3>
+            <p>Acompañamos a fundadores desde el día uno, ordenando su estructura para escalar y recibir inversión sin sorpresas legales.</p>
+            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+                <li style="margin-bottom: 8px;">✓ Armado de SAS, SRL y pactos de socios (Vesting).</li>
+                <li style="margin-bottom: 8px;">✓ Notas convertibles, SAFEs y rondas de capital.</li>
+                <li style="margin-bottom: 8px;">✓ Estructuras de exportación de servicios y Flips.</li>
+            </ul>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta-corporativa">
+            <h3><a href="creadores.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Creadores de Contenido e Influencers ➔</a></h3>
+            <p>Asesoramos a creadores, streamers y agencias en la negociación de sus contratos para que hagan valer su trabajo y aseguren sus ingresos.</p>
+            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+                <li style="margin-bottom: 8px;">✓ Contratos de patrocinio, marcas y uso de imagen.</li>
+                <li style="margin-bottom: 8px;">✓ Monetización, Twitch, YouTube y cobros del exterior.</li>
+                <li style="margin-bottom: 8px;">✓ Defensa ante cierres de cuentas, robos y strikes.</li>
+            </ul>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta-corporativa">
+             <h3><a href="deporte.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Derecho Deportivo ➔</a></h3>
+            <p>Asesoramos a futbolistas, atletas, agentes y clubes en la gestión de sus contratos, transferencias y regulaciones específicas.</p>
+            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+                <li style="margin-bottom: 8px;">✓ Fichajes, contratos Ley 20.160 y pases internacionales.</li>
+                <li style="margin-bottom: 8px;">✓ Derechos de formación y Mecanismo de Solidaridad FIFA.</li>
+                <li style="margin-bottom: 8px;">✓ Representación y litigios ante el TAS y federaciones.</li>
+            </ul>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="tarjeta-corporativa">
+            <h3><a href="inteligencia-artificial.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Inteligencia Artificial y Tech Avanzada ➔</a></h3>
+            <p>Guiamos a empresas de software y equipos de desarrollo en el marco legal aplicable al uso de algoritmos y automatización.</p>
+            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+                <li style="margin-bottom: 8px;">✓ Límites de responsabilidad civil por sistemas autónomos.</li>
+                <li style="margin-bottom: 8px;">✓ Validación de bases de datos para entrenamiento de IA.</li>
+                <li style="margin-bottom: 8px;">✓ Políticas de privacidad y cumplimiento ante la AAIP.</li>
+            </ul>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="tarjeta-corporativa">
+            <h3><a href="propiedad-intelectual.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Propiedad Intelectual Digital ➔</a></h3>
+            <p>Protegemos tus desarrollos de software, marcas y contenidos en internet para que mantengas el control exclusivo de lo que creás.</p>
+            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+                <li style="margin-bottom: 8px;">✓ Trámites ante el INPI y protección de marcas/patentes.</li>
+                <li style="margin-bottom: 8px;">✓ Contratos de desarrollo de software y depósito en DNDA.</li>
+                <li style="margin-bottom: 8px;">✓ Bajas por piratería (DMCA) y plagio en plataformas.</li>
+            </ul>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="tarjeta-corporativa">
+           <h3><a href="amparos-salud.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Derecho de la Salud y Amparos ➔</a></h3> 
+            <p>Estructuramos litigios estratégicos contra obras sociales y prepagas, y asesoramos a instituciones médicas en los desafíos de la medicina moderna.</p>
+            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+                <li style="margin-bottom: 8px;">✓ Amparos urgentes por medicación de alto costo, prótesis y tratamientos.</li>
+                <li style="margin-bottom: 8px;">✓ Conflictos de cobertura por prestaciones por discapacidad (Ley 24.901).</li>
+                <li style="margin-bottom: 8px;">✓ Regulación en Telemedicina, ensayos clínicos y responsabilidad médica.</li>
+            </ul>
+        </div>
+
+                <!-- Tarjeta 7: Real Estate Corporativo y Desarrollos -->
+        <div class="tarjeta-corporativa" style="grid-column: 1 / -1; max-width: 380px; margin: 0 auto;">
+            <h3><a href="real-estate.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Real Estate y Desarrollos ➔</a></h3>
+            <p>Estructuramos la arquitectura jurídica y financiera de proyectos inmobiliarios, fideicomisos al costo y modelos modernos de inversión en activos reales.</p>
+            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+                <li style="margin-bottom: 8px;">✓ Fideicomisos de construcción y contratos de obra complejos.</li>
+                <li style="margin-bottom: 8px;">✓ Legal Tech: Tokenización de inmuebles y Crowdfunding.</li>
+                <li style="margin-bottom: 8px;">✓ Auditorías de tierras (Due Diligence) y desarrollos logísticos.</li>
+            </ul>
+        </div>
+    </div> <!-- Cierre del grid-corporativo -->
+</section> <!-- Cierre de la sección prácticas -->
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto">
+        <div class="encabezado-seccion">
+            <h2>Contacto</h2>
+            <div class="linea-decorativa"></div>
+            <p>Canales institucionales habilitados para coordinar consultas corporativas con nuestro equipo directivo.</p>
+        </div>
+        <div class="contenedor-contacto">
+            <div class="info-contacto">
+                <h3>Sede Central</h3>
+                <div class="bloque-dato">
+                    <label>Ubicación</label>
+                    <p>Av. Corrientes 450, Piso 10, CABA, Argentina.</p>
+                </div>
+                <div class="bloque-dato">
+                    <label>Teléfono Corporativo</label>
+                    <p>+54 (11) 4321-5555</p>
+                </div>
+                <div class="bloque-dato">
+                    <label>Canal Oficial Electrónico</label>
+                    <p>contacto@rigantigeiler.com</p>
+                </div>
+            </div>
+            <div>
+                <form class="formulario-contacto" onsubmit="event.preventDefault(); alert('Su requerimiento institucional ha sido enviado con éxito de manera confidencial.');">
+                    <input type="text" placeholder="Nombre y Apellido" required>
+                    <input type="email" placeholder="Correo corporativo" required>
+                    <div class="campo-ancho"><input type="text" placeholder="Empresa / Entidad Jurídica"></div>
+                    <div class="campo-ancho"><textarea placeholder="Detalle su consulta de forma estrictamente informativa..." rows="5" required></textarea></div>
+                    <button type="submit" class="boton-enviar">Enviar Requerimiento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN PREGUNTAS FRECUENTES (FAQ MINIMALISTA) -->
+<section id="faq" style="padding: 100px 12%; background-color: var(--color-fondo-claro, #f8f9fa); border-top: 1px solid rgba(0,0,0,0.03);">
+    <div style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- Encabezado sutil alineado a tu diseño general -->
+        <div class="encabezado-seccion" style="text-align: center; margin-bottom: 50px;">
+            <h2>Consultas Frecuentes</h2>
+            <div class="linea-decorativa" style="width: 40px; height: 2px; background-color: var(--color-secundario); margin: 15px auto;"></div>
+        </div>
+
+        <!-- Contenedor del Acordeón Puro HTML/CSS -->
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+            
+            <!-- Pregunta 1 -->
+            <details style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 2px; transition: all 0.3s ease; padding: 5px 0;">
+                <summary style="font-family: var(--fuente-titulos); font-size: 0.95rem; font-weight: 500; color: var(--color-primario); padding: 18px 25px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; user-select: none;">
+                    ¿Cómo estructuran los honorarios para startups y proyectos tecnológicos?
+                    <span style="color: var(--color-secundario); font-size: 0.8rem; transition: transform 0.3s;">▼</span>
+                </summary>
+                <div style="padding: 0 25px 20px 25px; font-family: var(--fuente-cuerpo); font-size: 0.88rem; line-height: 1.7; color: #555; font-weight: 300;">
+                    Ofrecemos esquemas previsibles adaptados a cada etapa: desde tarifas fijas (*fixed fees*) para la constitución de SAS/SRL y pactos de socios, hasta abonos mensuales o asesoramiento estructurado por hitos para rondas de inversión (SAFEs y notas convertibles).
+                </div>
+            </details>
+
+            <!-- Pregunta 2 -->
+            <details style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 2px; transition: all 0.3s ease; padding: 5px 0;">
+                <summary style="font-family: var(--fuente-titulos); font-size: 0.95rem; font-weight: 500; color: var(--color-primario); padding: 18px 25px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; user-select: none;">
+                    ¿Qué validez tiene un amparo de salud ante la negativa de una prepaga u obra social?
+                    <span style="color: var(--color-secundario); font-size: 0.8rem; transition: transform 0.3s;">▼</span>
+                </summary>
+                <div style="padding: 0 25px 20px 25px; font-family: var(--fuente-cuerpo); font-size: 0.88rem; line-height: 1.7; color: #555; font-weight: 300;">
+                    La jurisprudencia federal en Argentina brinda un respaldo sólido. Ante rechazos de medicación de alto costo, prótesis importadas o prestaciones por discapacidad (Ley 24.901), la acción de amparo con medida cautelar permite obtener una orden judicial de cobertura inmediata en pocos días.
+                </div>
+            </details>
+
+            <!-- Pregunta 3 -->
+            <details style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 2px; transition: all 0.3s ease; padding: 5px 0;">
+                <summary style="font-family: var(--fuente-titulos); font-size: 0.95rem; font-weight: 500; color: var(--color-primario); padding: 18px 25px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; user-select: none;">
+                    ¿Cómo acompañan a una Pyme tradicional en su transición digital?
+                    <span style="color: var(--color-secundario); font-size: 0.8rem; transition: transform 0.3s;">▼</span>
+                </summary>
+                <div style="padding: 0 25px 20px 25px; font-family: var(--fuente-cuerpo); font-size: 0.88rem; line-height: 1.7; color: #555; font-weight: 300;">
+                    Mitigamos los riesgos regulatorios de la adopción tecnológica. Diseñamos manuales internos de uso seguro de IA (evitando filtración de secretos comerciales), estructuramos contratos de proveedores de software y garantizamos el debido cumplimiento de las normativas de protección de datos personales.
+                </div>
+            </details>
+
+            <!-- Pregunta 4 -->
+            <details style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 2px; transition: all 0.3s ease; padding: 5px 0;">
+                <summary style="font-family: var(--fuente-titulos); font-size: 0.95rem; font-weight: 500; color: var(--color-primario); padding: 18px 25px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; outline: none; user-select: none;">
+                    ¿Qué alcance tienen las estrategias de propiedad intelectual con enfoque Mercosur?
+                    <span style="color: var(--color-secundario); font-size: 0.8rem; transition: transform 0.3s;">▼</span>
+                </summary>
+                <div style="padding: 0 25px 20px 25px; font-family: var(--fuente-cuerpo); font-size: 0.88rem; line-height: 1.7; color: #555; font-weight: 300;">
+                    Estructuramos la protección de intangibles previendo la expansión regional. A través de convenios de prioridad y alianzas estratégicas transfronterizas, blindamos software, marcas de exportación y activos comerciales en los principales mercados de la región desde el primer día.
+                </div>
+            </details>
+
+        </div>
+    </div>
+</section>
+<!-- SECCIÓN INFORMAL DE CIERRE (ESTILO MODO MARVAL) -->
+   <section class="seccion-cierre-marval" style="background-image: linear-gradient(rgba(7, 14, 27, 0.3), rgba(7, 14, 27, 0.6)), url('rgma2.png');">
+        <div class="contenido-cierre">
+            <span class="subtitulo-cierre">Sumate a nuestro</span>
+            <h2 class="marca-redes">#ModoRGM</h2>
+            <p class="descripcion-cierre">Buscamos profesionales apasionados que quieran desafiar los límites de la práctica jurídica tradicional en entornos de derecho tecnológico, ecosistema de startups y amparos de salud complejos.</p>
+            <a href="#contacto" class="btn-instagram">Ver oportunidades</a>
+        </div>
+    </section> 
+<!-- PIE DE PÁGINA (FOOTER COMPLETAMENTE CONSOLIDADO Y ACTUALIZADO) -->
+    <footer style="background-color: var(--color-primario); color: #ffffff; padding: 80px 12% 40px 12%; border-top: 1px solid rgba(255,255,255,0.05);">
+        
+        <!-- ESTILOS INTERNOS AISLADOS PARA EL FOOTER -->
+        <style>
+            .bloques-footer-fijo {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 50px;
+                margin-bottom: 60px;
+                text-align: left;
+            }
+            .columna-footer-fija h4 {
+                font-family: var(--fuente-titulos);
+                color: var(--color-secundario);
+                font-size: 1rem;
+                margin-bottom: 20px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+            }
+            .columna-footer-fija p {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 0.85rem;
+                line-height: 1.8;
+                font-weight: 300;
+            }
+            .columna-footer-fija ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .columna-footer-fija ul li {
+                margin-bottom: 12px;
+            }
+            .columna-footer-fija ul li a {
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 0.85rem;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                font-weight: 300;
+            }
+            .columna-footer-fija ul li a:hover {
+                color: var(--color-secundario);
+            }
+        </style>
+
+        <div class="bloques-footer-fijo">
+            
+            <!-- Columna 1: La Firma -->
+            <div class="columna-footer-fija">
+                <h4>LA FIRMA</h4>
+                <p>Riganti, Geiler & Márquez Alluralde Abogados proporciona soluciones corporativas de alcance nacional con proyección regional, respondiendo a la alta complejidad jurídica y financiera actual.</p>
+            </div>
+
+            <!-- Columna 2: Áreas Clave con Enlaces a Páginas Internas -->
+            <div class="columna-footer-fija">
+                <h4>ÁREAS CLAVE</h4>
+                <ul>
+                    <li><a href="startups.html">Startups y Negocios Digitales</a></li>
+                    <li><a href="creadores.html">Creadores de Contenido e Influencers</a></li>
+                    <li><a href="deporte.html">Derecho Deportivo</a></li>
+                    <li><a href="inteligencia-artificial.html">Inteligencia Artificial y Tech</a></li>
+                    <li><a href="propiedad-intelectual.html">Propiedad Intelectual Digital</a></li>
+                    <li><a href="amparos-salud.html">Derecho de la Salud y Amparos</a></li>
+                    <li><a href="real-estate.html">Real Estate y Desarrollos</a></li>
+                </ul>
+            </div>
+            
+            <!-- Columna 3: Enfoque Regional Transfronterizo -->
+            <div class="columna-footer-fija">
+                <h4>ENFOQUE MERCOSUR</h4>
+                <p>Mantenemos una red activa de corresponsalías y alianzas estratégicas operativas en los principales centros comerciales y productivos del país y los mercados de la región.</p>
+            </div>
+            
+        </div> <!-- Cierra bloques-footer-fijo correctamente -->
+        
+        <!-- Línea Inferior de Copyright -->
+        <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 25px; text-align: center; font-size: 0.8rem; color: rgba(255, 255, 255, 0.4); font-weight: 300;">
+            <p>© <script>document.write(new Date().getFullYear());</script> Riganti, Geiler & Márquez Alluralde - Abogados. Todos los derechos reservados. | Políticas de Confidencialidad</p>
+        </div>
+    </footer>
+    <!-- INTERACTIVIDAD Y OPTIMIZACIÓN VISUAL (JAVASCRIPT) -->
+    <script>
+        // 1. Reducción dinámica de la barra superior al hacer scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (header) {
+                if (window.scrollY > 50) {
+                    header.style.padding = '15px 8%';
+                    header.style.backgroundColor = 'rgba(10, 17, 32, 0.99)';
+                    header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
+                } else {
+                    header.style.padding = '25px 8%';
+                    header.style.backgroundColor = 'rgba(10, 17, 32, 0.96)';
+                    header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.05)';
+                }
+            }
+        });
+
+        // 2. Animación Scroll Reveal para tarjetas corporativas
+        const tarjetas = document.querySelectorAll('.tarjeta-corporativa');
+        const opcionesObservador = { threshold: 0.15, rootMargin: "0px 0px -40px 0px" };
+
+        const observador = new IntersectionObserver(function(entradas, observador) {
+            entradas.forEach(entrada => {
+                if (!entrada.isIntersecting) return;
+                entrada.target.classList.add('visible'); 
+                observador.unobserve(entrada.target);
+            });
+        }, opcionesObservador);
+
+        tarjetas.forEach(tarjeta => {
+            observador.observe(tarjeta);
+        });
+
+        // 3. Control de restauración de posición de scroll
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    </script> 
+
+    <!-- BARRA FLOTANTE INTERACTIVA LATERAL -->
+    <div class="barra-flotante-contacto">
+        <a href="#contacto" class="item-flotante" title="Escribir Correo">
+            <span class="texto-flotante">CONTACTO</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+        </a>
+
+        <a href="tel:+541143215555" class="item-flotante" title="Llamar">
+            <span class="texto-flotante">LLAMAR</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+        </a>
+
+        <a href="#contacto" class="item-flotante" title="Sede Central">
+            <span class="texto-flotante">UBICACIÓN</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+        </a>
+
+        <a href="#contacto" class="item-flotante" title="English Version">
+            <span class="texto-flotante idioma-texto">ENGLISH</span>
+            <div class="icono-flotante">
+                <svg xmlns="http://w3.org" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
+     
