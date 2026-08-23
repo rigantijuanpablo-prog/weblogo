@@ -36,223 +36,75 @@
             -webkit-font-smoothing: antialiased; 
         }
 
-           /* ==========================================================================
-           LOGOTIPO PREMIUM RECTIFICADO (PROPORCIONES REALES E INMUNIDADFLEX)
+        /* ==========================================================================
+           BRANDING INSTITUCIONAL RECTIFICADO (ESTILO FIEL A LA REFERENCIA)
            ========================================================================== */
-        .logo-premium {
-            height: 48px;                 /* Altura institucional refinada */
-            width: 56px;                  /* CORRECCIÓN: Ajustado al ancho real de tu imagen (Proporción 536x465) */
-            display: block;
-            flex-shrink: 0;               /* Forzado absoluto: impide que Flexbox lo encoja a 0px */
-            margin-right: 5px;            /* Separa sutilmente el dibujo de las letras */
-            
-            /* Llama aquí a tu nueva imagen transparente */
-            background-image: url('logo-dorado-transparente-removebg-preview.webp'); 
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center; 
-            
-            /* Máxima nitidez de renderizado para las líneas entrelazadas */
-            image-rendering: -webkit-optimize-contrast;
-            image-rendering: crisp-edges;
-        }
-
-        /* ==========================================
-           NUEVOS ESTILOS: SECCIÓN FIN DE PÁGINA (INSTAGRAM)
-           ========================================== */
-        .seccion-cierre-marval {
-            position: relative;
-            background-size: cover;
-            background-position: center center; 
-            padding: 260px 20px 280px 20px; 
-            text-align: center;
-            color: #ffffff;
-            font-family: var(--fuente-cuerpo);
-        }
-
-        .contenido-cierre {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        .subtitulo-cierre {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            color: var(--color-secundario);
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .marca-redes {
-            font-size: 54px;
-            font-weight: 700;
-            margin: 0 0 20px 0;
-            letter-spacing: -1px;
-            font-family: var(--fuente-titulos);
-        }
-
-        .descripcion-cierre {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 35px;
-            opacity: 0.95;
-        }
-
-        .btn-instagram {
-            display: inline-block;
-            background-color: var(--color-secundario);
-            color: var(--color-primario);
-            text-decoration: none;
-            padding: 14px 35px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 4px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        .btn-instagram:hover {
-            background-color: #b0936b;
-            transform: translateY(-2px);
-        }
-        /* --- DISEÑO SANEADO DE LA BARRA LATERAL --- */
-        .barra-flotante-contacto {
-            position: fixed;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            gap: 2px; 
-        }
-
-        .item-flotante {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            background-color: #070e1b; 
-            border-left: 2px solid #c5a880; 
-            color: #ffffff;
-            text-decoration: none;
-            height: 50px;
-            min-width: 50px;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            overflow: hidden;
-        }
-
-        .icono-flotante {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .icono-flotante svg {
-            color: #ffffff;
-            transition: color 0.3s ease;
-        }
-
-        .texto-flotante {
-            white-space: nowrap;
-            padding: 0;
-            font-size: 13px;
-            font-family: var(--fuente-cuerpo);
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            max-width: 0;
-            opacity: 0;
-            transition: max-width 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease, opacity 0.2s ease;
-        }
-
-        /* Hover Corporativo Inteligente */
-        .item-flotante:hover {
-            background-color: #c5a880;
-        }
-
-        .item-flotante:hover .icono-flotante svg {
-            color: #070e1b; 
-        }
-
-        .item-flotante:hover .texto-flotante {
-            max-width: 150px;
-            padding: 0 10px 0 20px;
-            opacity: 1;
-            color: #070e1b;
-        }
-
-        /* --- BARRA DE NAVEGACIÓN TRANSLÚCIDA CON BLUR --- */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(7, 14, 27, 0.96);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding: 22px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(197, 168, 128, 0.12);
-            transition: all 0.4s ease;
-        }
-
-        /* --- BRANDING MINIMALISTA ABSOLUTO ARMONIZADO --- */
         .marca-estudio {
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 20px;
-            padding-left: 10px;
-            transition: opacity 0.3s ease;
-            height: 100%;
+            gap: 0;                       /* Manejamos la separación con los márgenes internos */
+            height: auto;
         }
 
-        .marca-estudio:hover {
-            opacity: 0.85;
+        .logo-premium {
+            height: 48px;                 /* Altura institucional */
+            width: auto;                  /* Calcula el ancho proporcional automáticamente */
+            max-width: 56px;              /* Límite horizontal basado en tu archivo de 96px */
+            display: block;
+            flex-shrink: 0;               /* Impide que Flexbox encoja la imagen */
+            margin-right: 20px;           /* Espacio exacto antes de la barra dorada */
+            
+            /* Ultra nitidez para el renderizado de las líneas entrelazadas */
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
         }
 
-        .sigla-premium {
-            font-family: var(--fuente-titulos);
-            color: var(--color-secundario) !important;
-            font-size: 1.4rem;
-            font-weight: 500;
-            letter-spacing: 3px;
-            border-right: 1px solid rgba(197, 168, 128, 0.25);
-            padding-right: 20px;
-            line-height: 1;
-            user-select: none;
+        /* LÍNEA VERTICAL DIVISORIA EN ORO INSTITUCIONAL (IDÉNTICA A LA REFERENCIA) */
+        .divisor-marca {
+            height: 38px;                 /* Altura estilizada (sutilmente más corta que el logo) */
+            width: 1.5px;                 /* Grosor ultra fino de alta gama */
+            
+            /* DEGRADADO MAESTRO: Transparente en las puntas y oro satinado en el centro */
+            background: linear-gradient(
+                to bottom, 
+                transparent 0%, 
+                var(--color-secundario) 50%, 
+                transparent 100%
+            );
+            
+            margin-right: 20px;           /* Separación exacta antes de los apellidos */
+            flex-shrink: 0;               /* Evita que los menús elásticos la deformen */
+            opacity: 0.85;                /* Suaviza el brillo para un acabado sofisticado */
         }
 
+        /* FORZADO TIPOGRÁFICO: Activación de fuentes romanas con serifas */
         .nombre-estudio {
-            font-family: var(--fuente-titulos);
+            font-family: var(--fuente-titulos) !important; 
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
         .nombre-estudio .apellido-principal {
             display: block;
             font-weight: 500;
-            font-size: 1.15rem;
-            letter-spacing: 1.5px;
-            line-height: 1.15;
+            font-size: 1.2rem;            /* Peso visual imponente */
+            letter-spacing: 2px;
+            line-height: 1.2;
             color: #ffffff !important;
         }
 
         .nombre-estudio .apellido-secundario {
             display: block;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 0.85rem;
-            letter-spacing: 2px;
-            color: rgba(255, 255, 255, 0.75) !important;
-            margin-top: 4px;
-            line-height: 1.15;
+            letter-spacing: 2.5px;
+            color: rgba(255, 255, 255, 0.8) !important;
+            margin-top: 2px;
+            line-height: 1.2;
         }
+
 
         /* --- ENLACES DE LA NAV --- */
         nav ul {
@@ -618,13 +470,16 @@
         </a>
     </div>
 
-      <!-- ENCABEZADO PREMIUM TRANSLÚCIDO CON LOGO TRANSPARENTE -->
+    <!-- ENCABEZADO PERFECCIONADO CON LA BARRA DIVISORIA INCORPORADA -->
     <header>
         <a href="#" class="marca-estudio">
-            <!-- La caja receptora que cargará tu WebP transparente de fondo -->
-            <div class="logo-premium"></div>
+            <!-- Tu nuevo logotipo WebP de alta definición y transparencia nativa -->
+            <img src="logo-dorado-transparente.webp" alt="Logo Riganti" class="logo-premium">
             
-            <!-- Estructura de apellidos en blanco puro de tu firma -->
+            <!-- EL DIVISOR DORADO: Aquí se dibuja la línea vertical por CSS -->
+            <div class="divisor-marca"></div>
+            
+            <!-- Bloque de apellidos con tipografía romana institucional -->
             <div class="nombre-estudio">
                 <span class="apellido-principal">RIGANTI, GEILER</span>
                 <span class="apellido-secundario">& MÁRQUEZ ALLURALDE</span>
@@ -639,6 +494,7 @@
             </ul>
         </nav>
     </header>
+
 
     <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
     <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
