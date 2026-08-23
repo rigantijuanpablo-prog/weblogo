@@ -36,22 +36,23 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* ==========================================================================
-           LOGOTIPO PREMIUM RECTIFICADO (RENDERING DE ÉLITE CON ARCHIVO WEBP)
+           /* ==========================================================================
+           LOGOTIPO PREMIUM RECTIFICADO (PROPORCIONES REALES E INMUNIDADFLEX)
            ========================================================================== */
         .logo-premium {
             height: 48px;                 /* Altura institucional refinada */
-            width: 54px;                  /* Ancho exacto proporcional a la imagen */
+            width: 56px;                  /* CORRECCIÓN: Ajustado al ancho real de tu imagen (Proporción 536x465) */
             display: block;
-            flex-shrink: 0;               /* Evita que se comprima en menús Flexbox */
+            flex-shrink: 0;               /* Forzado absoluto: impide que Flexbox lo encoja a 0px */
+            margin-right: 5px;            /* Separa sutilmente el dibujo de las letras */
             
-            /* Llamada directa al recurso optimizado de alta velocidad */
-            background-image: url('logo-dorado-transparente1.webp'); 
+            /* Llama aquí a tu nueva imagen transparente */
+            background-image: url('logo-dorado-transparente.webp'); 
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
             
-            /* Forzado de hardware: Dibuja la imagen con la máxima nitidez posible */
+            /* Máxima nitidez de renderizado para las líneas entrelazadas */
             image-rendering: -webkit-optimize-contrast;
             image-rendering: crisp-edges;
         }
@@ -617,10 +618,10 @@
         </a>
     </div>
 
-    <!-- ENCABEZADO PREMIUM TRANSLÚCIDO CON LOGO INTEGRADO -->
+      <!-- ENCABEZADO PREMIUM TRANSLÚCIDO CON LOGO TRANSPARENTE -->
     <header>
         <a href="#" class="marca-estudio">
-            <!-- CONTENEDOR LIMPIO: Carga el WebP de fondo con tus estilos CSS de élite -->
+            <!-- La caja receptora que cargará tu WebP transparente de fondo -->
             <div class="logo-premium"></div>
             
             <!-- Estructura de apellidos en blanco puro de tu firma -->
@@ -638,6 +639,7 @@
             </ul>
         </nav>
     </header>
+
     <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
     <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
         
