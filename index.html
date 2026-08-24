@@ -138,16 +138,18 @@
         }
 
                /* --- DISEÑO SANEADO DE LA BARRA LATERAL --- */
+               /* 💡 MICRO-ARREGLO 3: Centrado vertical absoluto al 100% de precisión */
         .barra-flotante-contacto {
-            position: fixed;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            gap: 2px; /* Espaciado limpio entre cajas */
+            position: fixed !important;
+            right: 0 !important;
+            top: 50% !important;                     /* Anclaje al eje medio */
+            transform: translateY(-50%) !important;  /* Compensa el alto de la barra hacia arriba */
+            z-index: 9999 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 2px !important; 
         }
+
 
         .item-flotante {
             display: flex;
@@ -690,25 +692,29 @@
         <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;">
             <source src="video-rgma.mp4" type="video/mp4">
             Tu navegador no soporta videos.
-        </video>
-
-        <!-- 💡 Tu contenedor de texto con la clase que hace flotar las letras -->
-        <div class="hero-contenedor-texto" style="text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
+      </video>
+        
+        <!-- 💡 LA ETICA RECONSTRUIDA: Capa de degradado nativa que sostiene tu propuesta de contraste gradual -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(10, 15, 30, 0.15) 0%, rgba(10, 15, 30, 0.40) 50%, rgba(10, 15, 30, 0.65) 100%) !important; z-index: 2;"></div>
+       
+        <!-- Contenedor de texto con la clase que hace flotar las letras -->
+        <div class="hero-contenedor-texto" style="text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto; position: relative; z-index: 3;">
             
-            <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 300 !important; line-height: 1.35 !important; margin-bottom: 25px !important; letter-spacing: 0.04em !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
+            <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 300 !important; line-height: 1.35 !important; margin-bottom: 25px !important; letter-spacing: 0.04em !important; text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6) !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
             
-            <p style="margin: 20px auto 40px auto; max-width: 750px; text-align: center; color: #ffffff !important; font-size: 1.15rem !important; font-weight: 400 !important; line-height: 1.6 !important;">
+            <!-- MICRO-ARREGLO 1: Tu cápsula translúcida con backdrop-filter para aislar el texto del follaje brillante -->
+            <p style="margin: 20px auto 0 auto; max-width: 750px; text-align: center; color: #ffffff !important; font-size: 1.15rem !important; font-weight: 400 !important; line-height: 1.6 !important; background: rgba(7, 14, 27, 0.35) !important; backdrop-filter: blur(4px) !important; -webkit-backdrop-filter: blur(4px) !important; padding: 12px 24px !important; border-radius: 4px !important; display: inline-block !important; text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6) !important;">
                 Soluciones jurídicas de alta complejidad para empresas digitales, Pymes en proceso de transformación digital y protagonistas de la economía moderna.
             </p>
             
-            <!-- 💡 Tu botón 100% transparente con desenfoque de fondo premium (backdrop-filter) -->
-            <a href="#contacto" class="boton-premium" style="display: inline-block !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 35px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A253 !important; letter-spacing: 2.5px !important; backdrop-filter: blur(2px) !important; -webkit-backdrop-filter: blur(2px) !important;">AGENDAR CONSULTA CONFIDENCIAL</a>
+            <!-- MICRO-ARREGLO 2: Botón con margin-top: 40px para darle los 24px extras de respiración y presencia corporativa -->
+            <a href="#contacto" class="boton-premium" style="display: inline-block !important; margin-top: 40px !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 35px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A253 !important; letter-spacing: 2.5px !important; backdrop-filter: blur(2px) !important; -webkit-backdrop-filter: blur(2px) !important;">AGENDAR CONSULTA CONFIDENCIAL</a>
         </div>
-    </section>
+    </section> <!-- 💡 CORREGIDO: Cerramos la sección hero de forma segura para aislar el video -->
 
+    <!-- 3. SECCIÓN EL ESTUDIO -->
+    <section id="estudio">
 
-
-  <section id="estudio">
         <div class="encabezado-seccion">
                        <h2>El Estudio</h2>
             <div class="linea-decorativa"></div>
