@@ -609,27 +609,32 @@
             </div>
         </a>
     </div>
-    <header>
-              <!-- CONTENEDOR DE IDENTIDAD MINIMALISTA TOTALMENTE ARMONIZADO -->
-        <a href="#" class="marca-estudio">
-            <!-- Sigla RGM en oro satinado -->
-            <div class="sigla-premium">RGM</div>
+    <header style="display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 15px 12% !important; background-color: #070e1b !important; position: sticky !important; top: 0 !important; z-index: 1000 !important; border-bottom: 1px solid rgba(197, 168, 128, 0.2) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; height: 90px !important;">
+        
+        <!-- CONTENEDOR DE IDENTIDAD TOTALMENTE ARMONIZADO -->
+        <a href="#" class="marca-estudio" style="display: flex !important; align-items: center !important; text-decoration: none !important; height: 100% !important;">
+            <!-- Tu archivo webp/png transparente de Photopea (Isotipo + barra vertical dorada) -->
+            <img src="nombre-logo-estudio.webp" alt="Isotipo RGM" style="height: 60px !important; width: auto !important; display: block !important; margin-right: 18px !important; object-fit: contain !important;">
             
-            <!-- Estructura limpia de apellidos en blanco puro -->
-            <div class="nombre-estudio">
-                <span class="apellido-principal">RIGANTI, GEILER</span>
-                <span class="apellido-secundario">& MÁRQUEZ ALLURALDE</span>
+            <!-- Estructura limpia de apellidos en blanco puro (Tipografía Cinzel) -->
+            <div style="display: flex !important; flex-direction: column !important; justify-content: center !important; font-family: 'Cinzel', serif !important; line-height: 1.25 !important; letter-spacing: 1.5px !important;">
+                <span style="color: #ffffff !important; font-size: 16px !important; font-weight: 700 !important; display: block !important;">RIGANTI, GEILER</span>
+                <span style="color: #ffffff !important; font-size: 12px !important; font-weight: 500 !important; display: block !important;">& MÁRQUEZ ALLURALDE</span>
+                <span style="color: #c5a880 !important; font-size: 9px !important; font-weight: 700 !important; letter-spacing: 5px !important; margin-top: 4px !important; display: block !important;">ABOGADOS</span>
             </div>
         </a>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#estudio">El Estudio</a></li>
-                <li><a href="#practicas">Prácticas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+
+        <!-- NAVEGACIÓN -->
+        <nav style="display: flex !important; align-items: center !important;">
+            <ul style="display: flex !important; list-style: none !important; gap: 40px !important; margin: 0 !important; padding: 0 !important;">
+                <li><a href="#inicio" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important;">Inicio</a></li>
+                <li><a href="#estudio" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important;">El Estudio</a></li>
+                <li><a href="#practicas" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important;">Prácticas</a></li>
+                <li><a href="#contacto" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important; border: 1px solid #c5a880 !important; padding: 8px 18px !important; border-radius: 2px !important; background-color: rgba(197, 168, 128, 0.1) !important;">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
 
     <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
     <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
