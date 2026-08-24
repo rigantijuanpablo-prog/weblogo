@@ -11,7 +11,7 @@
     <link href="https://googleapis.com" rel="stylesheet">
    
     <style>
-        /* --- ARREGLO DE BARRA BLANCA (DENTRO DEL STYLE Y SIN LLAVES SUELTAS) --- */
+        /* --- ARREGLO DE BARRA BLANCA Y TU CONTRASTE GRADUAL INTEGRADO --- */
         .hero-principal {
             margin-top: 0 !important;
             padding-top: 0 !important;
@@ -21,6 +21,31 @@
             margin-top: 0 !important;
         }
 
+        /* Tu propuesta de degradado aplicada sobre la clase real */
+        .hero-principal::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 15, 30, 0.15) 0%,
+                rgba(10, 15, 30, 0.40) 50%,
+                rgba(10, 15, 30, 0.65) 100%
+            ) !important;
+            z-index: 2; /* Se posiciona justo arriba del video */
+        }
+
+        .hero-contenedor-texto {
+            position: relative;
+            z-index: 3; /* Flota sobre el degradado */
+        }
+
+        .hero-contenedor-texto h1, 
+        .hero-contenedor-texto p {
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6) !important; /* Tu efecto de letra flotante */
+        }
+
+        
         /* --- VARIABLES DE DISEÑO PREMIUM (ESTILO MARVAL & BECCAR VARELA) --- */
         :root {
             --color-primario: #070e1b;   /* Azul medianoche profundo */
