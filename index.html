@@ -21,19 +21,20 @@
             margin-top: 0 !important;
         }
 
-        /* Tu propuesta de degradado aplicada sobre la clase real */
+             /* 💡 CAPA GRADUAL DE LUZ CALIBRADA: Muestra la Facultad de Derecho con claridad */
         .hero-principal::before {
-            content: "";
-            position: absolute;
-            inset: 0;
+            content: "" !important;
+            position: absolute !important;
+            inset: 0 !important;
             background: linear-gradient(
                 to bottom,
-                rgba(10, 15, 30, 0.15) 0%,
-                rgba(10, 15, 30, 0.40) 50%,
-                rgba(10, 15, 30, 0.65) 100%
+                rgba(10, 20, 30, 0.35) 0%,
+                rgba(10, 20, 30, 0.45) 50%,
+                rgba(10, 20, 30, 0.75) 100%
             ) !important;
-            z-index: 2; /* Se posiciona justo arriba del video */
+            z-index: 2 !important; /* Se posiciona justo arriba de la foto/video */
         }
+
 
         .hero-contenedor-texto {
             position: relative;
@@ -695,11 +696,14 @@
       </video>
         
         <!-- 💡 LA ETICA RECONSTRUIDA: Capa de degradado nativa que sostiene tu propuesta de contraste gradual -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(10, 15, 30, 0.15) 0%, rgba(10, 15, 30, 0.40) 50%, rgba(10, 15, 30, 0.65) 100%) !important; z-index: 2;"></div>
+               </video>
+        
+        <!-- 💡 La capa HTML vacía ahora queda 100% transparente para que solo actúe tu CSS de arriba -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
        
-        <!-- Contenedor de texto con la clase que hace flotar las letras -->
+        <!-- Contenedor de texto (Flota limpio sobre el degradado de tu CSS) -->
         <div class="hero-contenedor-texto" style="text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto; position: relative; z-index: 3;">
-            
+
             <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 300 !important; line-height: 1.35 !important; margin-bottom: 25px !important; letter-spacing: 0.04em !important; text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6) !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
             
             <!-- MICRO-ARREGLO 1: Tu cápsula translúcida con backdrop-filter para aislar el texto del follaje brillante -->
