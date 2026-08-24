@@ -48,16 +48,17 @@
             -webkit-font-smoothing: antialiased;
         }
 
-  header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 12%; /* 👈 Incremetamos el aire vertical (de 18px a 24px) estilo Bruchou */
-    background-color: rgba(7, 14, 27, 0.78); 
+    padding: 20px 12%; 
+    background-color: rgba(7, 14, 27, 0.85); 
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+    /* Aplicamos el color dorado satinado a la base del header */
+    border-bottom: 1px solid rgba(197, 168, 128, 0.25);
     backdrop-filter: blur(12px); 
     -webkit-backdrop-filter: blur(12px); 
     transition: all 0.3s ease;
@@ -71,17 +72,21 @@
     height: auto;
 }
 
+/* Rediseño de la imagen para que el isotipo dorado y la línea resalten */
 .logo-premium {
-    height: 65px;                 /* 👈 Subimos la altura para que sea imponente */
+    height: 75px;                 /* 👈 Escalado al tamaño correcto de alta gama */
     width: auto;                  
-    max-width: 320px;             /* 👈 ¡CLAVE! Ampliamos el tope horizontal para que entre el texto largo sin achicarse */
+    max-width: 380px;             /* 👈 Espacio de sobra para que el texto e isotipo no se pisen */
     display: block;
     flex-shrink: 0;               
     margin-right: 20px;           
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
-    object-fit: contain;          /* Evita que el logo se deforme en pantallas de alta densidad */
+    object-fit: contain;          
+    /* Agrega un filtro sutil para potenciar el brillo dorado satinado corporativo (#c5a880) */
+    filter: drop-shadow(0px 1px 2px rgba(197, 168, 128, 0.2)); 
 }
+
 
 
 
