@@ -672,32 +672,29 @@
 
 
    
-      <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA (OPACIDAD CORREGIDA) -->
-    <section id="inicio" class="hero-principal" style="margin-top: 0 !important; position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <!-- PORTADA CON TU FILTRO GRADUAL INTELIGENTE -->
+    <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin-top: 0 !important;">
         
-        <!-- El elemento de video con parámetros de forzado institucional -->
+        <!-- El elemento de video de fondo -->
         <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;">
             <source src="video-rgma.mp4" type="video/mp4">
             Tu navegador no soporta videos.
         </video>
 
-               <!-- Textos institucionales equilibrados sobre el video ambiental -->
-        <div style="position: relative; z-index: 3; text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
+        <!-- 💡 Tu contenedor de texto con la clase que hace flotar las letras -->
+        <div class="hero-contenedor-texto" style="text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
             
-            <!-- 💡 H1 CON TEXT-SHADOW: Le da un contorno oscuro invisible que hace resaltar las letras blancas sobre el cielo -->
-            <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 300 !important; line-height: 1.35 !important; margin-bottom: 25px !important; letter-spacing: 0.04em !important; text-shadow: 0 4px 15px rgba(7, 14, 27, 0.75), 0 2px 4px rgba(7, 14, 27, 0.9) !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
+            <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 300 !important; line-height: 1.35 !important; margin-bottom: 25px !important; letter-spacing: 0.04em !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
             
-            <!-- 💡 PÁRRAFO CON TEXT-SHADOW: Evita que el texto chico se pierda contra los edificios y calles -->
-            <p style="margin: 20px auto 40px auto; max-width: 750px; text-align: center; color: #ffffff !important; font-size: 1.15rem !important; font-weight: 400 !important; line-height: 1.6 !important; text-shadow: 0 2px 8px rgba(7, 14, 27, 0.8) !important;">
+            <p style="margin: 20px auto 40px auto; max-width: 750px; text-align: center; color: #ffffff !important; font-size: 1.15rem !important; font-weight: 400 !important; line-height: 1.6 !important;">
                 Soluciones jurídicas de alta complejidad para empresas digitales, Pymes en proceso de transformación digital y protagonistas de la economía moderna.
             </p>
             
-            <!-- 💡 BOTÓN CON FONDO MÁS OSCURO Y CONTORNO REFORZADO: Ahora tiene una base oscura interna para recortarse contra el asfalto claro -->
-            <a href="#contacto" class="boton-premium" style="display: inline-block !important; background-color: rgba(7, 14, 27, 0.65) !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 35px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #c5a880 !important; letter-spacing: 2.5px !important; box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;">AGENDAR CONSULTA CONFIDENCIAL</a>
+            <!-- 💡 Tu botón 100% transparente con desenfoque de fondo premium (backdrop-filter) -->
+            <a href="#contacto" class="boton-premium" style="display: inline-block !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 35px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A253 !important; letter-spacing: 2.5px !important; backdrop-filter: blur(2px) !important; -webkit-backdrop-filter: blur(2px) !important;">AGENDAR CONSULTA CONFIDENCIAL</a>
         </div>
-
-
     </section>
+
 
 
   <section id="estudio">
