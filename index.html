@@ -647,9 +647,8 @@
 
 
    
-    <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
-    <!-- Busca tu sección de inicio (portada) y agrégale: style="margin-top: 0 !important;" -->
-<section id="inicio" class="hero-principal" style="margin-top: 0 !important; position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+      <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA (OPACIDAD CORREGIDA) -->
+    <section id="inicio" class="hero-principal" style="margin-top: 0 !important; position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
         
         <!-- El elemento de video con parámetros de forzado institucional -->
         <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;">
@@ -657,19 +656,20 @@
             Tu navegador no soporta videos.
         </video>
 
-        <!-- Capa oscura translúcida para garantizar el perfecto contraste de las letras blancas -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(7, 14, 27, 0.72), rgba(7, 14, 27, 0.88)); z-index: 2;"></div>
+        <!-- 💡 CAPA TRANSLÚCIDA CORREGIDA: Cambiada al 55% y 60% para que se aprecien la ciudad y los árboles -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(7, 14, 27, 0.55), rgba(7, 14, 27, 0.60)); z-index: 2;"></div>
 
         <!-- Textos institucionales equilibrados sobre el video ambiental -->
-       <div style="position: relative; z-index: 3; text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
+        <div style="position: relative; z-index: 3; text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
             <h1>Trayectoria Legal con una Perspectiva de Vanguardia</h1>
-            <p style="margin: 20px auto 40px auto; max-width: 750px; text-align: center; color: rgba(255, 255, 255, 0.75); font-size: 1.15rem; font-weight: 300; line-height: 1.6;">
+            <p style="margin: 20px auto 40px auto; max-width: 750px; text-align: center; color: rgba(255, 255, 255, 0.85); font-size: 1.15rem; font-weight: 300; line-height: 1.6;">
                 Brindamos soluciones jurídicas estratégicas de alta complejidad para empresas tecnológicas, Pymes en proceso de transformación digital y protagonistas de la economía moderna.
             </p>
             
             <a href="#contacto" class="boton-premium">Agendar consulta confidencial</a>
         </div>
     </section>
+
 
   <section id="estudio">
         <div class="encabezado-seccion">
