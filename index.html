@@ -35,17 +35,17 @@
             -webkit-font-smoothing: antialiased;
         }
 
-       header {
+     header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 12%;
-    background-color: rgba(7, 14, 27, 0.75);
+    padding: 18px 12%; 
+    background-color: rgba(7, 14, 27, 0.78); /* Translúcido */
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(197, 168, 128, 0.15);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px); /* Desenfoque estilo Apple/Marval */
     -webkit-backdrop-filter: blur(12px); 
     transition: all 0.3s ease;
 }
@@ -273,8 +273,7 @@
             font-size: 0.95rem;
             font-weight: 400;
         }
-
-        .grid-corporativo {
+.grid-corporativo {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 35px;
@@ -305,12 +304,43 @@
             letter-spacing: 0.5px;
         }
 
+        /* 👈 OPTIMIZACIÓN EN ENLACES DE TÍTULOS */
+        .tarjeta-corporativa h3 a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
         .tarjeta-corporativa p {
             color: var(--color-texto-suave);
             font-size: 0.95rem;
             line-height: 1.7;
             font-weight: 300;
         }
+
+        /* 👈 NUEVA VIÑETA GEOMÉTRICA EN ORO INSTITUCIONAL */
+        .tarjeta-corporativa ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            list-style: none; /* Remueve el check original del HTML */
+            font-size: 0.88rem;
+            color: var(--color-texto-suave);
+            text-align: left;
+        }
+
+        /* Dibuja el pequeño cuadrado dorado premium */
+        .tarjeta-corporativa ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 6px;
+            height: 6px;
+            background-color: var(--color-secundario); 
+            border-radius: 1px;
+        }
+
                 /* --- CONTACTO Y FORMULARIO --- */
         .contenedor-contacto {
             display: grid;
@@ -864,7 +894,7 @@
 </section>
     <!-- SECCIÓN DE CIERRE CORPORATIVO - TRABAJÁ CON NOSOTROS -->
       <!-- SECCIÓN DE CIERRE CORPORATIVO - TRABAJÁ CON NOSOTROS -->
-    <section class="seccion-talento" style="position: relative; background-image: linear-gradient(rgba(7, 14, 27, 0.65), rgba(7, 14, 27, 0.85)), url('rgma2.png'); background-size: cover; background-position: center; background-attachment: fixed; padding: 140px 12%; text-align: center; color: #ffffff;">
+    <section id="talento" class="seccion-talento" style="position: relative; background-image: linear-gradient(rgba(7, 14, 27, 0.65), rgba(7, 14, 27, 0.85)), url('rgma2.png'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; padding: 140px 12%; text-align: center; color: #ffffff;">
         <div class="contenido-talento" style="position: relative; z-index: 3; max-width: 750px; margin: 0 auto;">
             <span class="subtitulo-talento" style="font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; color: var(--color-secundario, #c5a880); display: block; margin-bottom: 15px;">Sumate a nuestro equipo</span>
             <h2 class="marca-talento" style="font-family: var(--fuente-titulos, 'Cinzel', serif); font-size: 2.8rem; font-weight: 500; margin: 0 0 20px 0; letter-spacing: 1px; color: #ffffff;">#ModoRGM</h2>
