@@ -35,18 +35,21 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* --- ENCABEZADO INSTITUCIONAL --- */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px 12%;
-            background-color: var(--color-primario);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(197, 168, 128, 0.2);
-        }
+       header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12%;
+    background-color: rgba(7, 14, 27, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    transition: all 0.3s ease;
+}
+
 
         .marca-estudio {
             text-decoration: none;
