@@ -640,11 +640,11 @@
             <div class="icono-flotante">🌐</div>
         </a>
     </div>
-    <!-- ENCABEZADO INSTITUCIONAL CON MARCA UNIFICADA EN BLANCO -->
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 24px 12%; background-color: rgba(7, 14, 27, 0.78); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(197, 168, 128, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all 0.3s ease;">
+       <!-- ENCABEZADO INSTITUCIONAL CON MARCA UNIFICADA EN BLANCO (ALTURA COMPENSADA) -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 12%; background-color: rgba(7, 14, 27, 0.78); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(197, 168, 128, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all 0.3s ease;">
         <a href="#" class="marca-estudio" style="display: flex; align-items: center; text-decoration: none;">
-            <!-- La imagen transparente se fuerza a un monocromo blanco mate mediante filtros CSS directos -->
-            <img src="marca-oficial.webp" alt="Riganti, Geiler & Márquez Alluralde" class="logo-premium" style="height: 48px; width: auto; object-fit: contain; display: block; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; filter: brightness(0) invert(1);">
+            <!-- Subimos el height a 64px para compensar la escala horizontal de la tipografía romana -->
+            <img src="marca-oficial.webp" alt="Riganti, Geiler & Márquez Alluralde" class="logo-premium" style="height: 64px; width: auto; object-fit: contain; display: block; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; filter: brightness(0) invert(1);">
         </a>
         <nav>
             <ul style="display: flex; list-style: none; gap: 40px; margin: 0; padding: 0;">
@@ -655,7 +655,6 @@
             </ul>
         </nav>
     </header>
-
 
  <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
     <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
