@@ -72,20 +72,15 @@ header {
     height: auto;
 }
 
-/* Rediseño de la imagen para que el isotipo dorado y la línea resalten */
 .logo-premium {
-    height: 75px;                 /* 👈 Escalado al tamaño correcto de alta gama */
-    width: auto;                  
-    max-width: 380px;             /* 👈 Espacio de sobra para que el texto e isotipo no se pisen */
-    display: block;
-    flex-shrink: 0;               
-    margin-right: 20px;           
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    object-fit: contain;          
-    /* Agrega un filtro sutil para potenciar el brillo dorado satinado corporativo (#c5a880) */
-    filter: drop-shadow(0px 1px 2px rgba(197, 168, 128, 0.2)); 
+    height: 75px !important;
+    width: auto !important;
+    max-width: 380px !important;
+    display: block !important;
+    flex-shrink: 0;
+    object-fit: contain;
 }
+
 
 
 
