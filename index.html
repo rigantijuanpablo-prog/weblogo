@@ -36,22 +36,21 @@
         }
 
 
-
-             /* 💡 ALINEACIÓN ASIMÉTRICA PREMIUM A LA IZQUIERDA */
+        /* 💡 CONFIGURACIÓN ASIMÉTRICA CON PADIND-TOP CALIBRADO */
         .hero-contenedor-texto {
             position: relative;
             z-index: 3;
-            text-align: left !important; /* 👈 Forzamos la lectura natural a la izquierda */
-            max-width: 680px !important; /* 👈 Caja compacta para que no tape el edificio */
-            margin: 0 auto 0 12% !important; /* 👈 12% clava el bloque en la misma línea que tu logo */
-            padding-top: 5vh;
+            text-align: left !important;
+            max-width: 680px !important;
+            margin: 0 auto 0 12% !important;
+            padding-top: 12vh !important; /* 👈 Genera el aire premium respecto al header azul */
         }
 
-        /* Tu efecto de relieve reforzado para contraste AAA */
         .hero-contenedor-texto h1, 
         .hero-contenedor-texto p {
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.75), 0 2px 5px rgba(0, 0, 0, 0.9) !important;
         }
+
 
 
         
@@ -694,7 +693,7 @@
 
 
    
-         <!-- PORTADA CON DISEÑO ASIMÉTRICO ORIENTADO A LA IZQUIERDA -->
+         <!-- PORTADA ASIMÉTRICA ULTRA MINIMALISTA (SIN SUBTÍTULO) -->
     <section id="inicio" class="hero-principal" style="display: flex !important; justify-content: flex-start !important; align-items: center !important;">
         
         <!-- El elemento de video de fondo ambiental -->
@@ -706,21 +705,17 @@
         <!-- Capa HTML vacía transparente de control -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
        
-        <!-- Contenedor de texto recostado a la izquierda -->
+        <!-- Contenedor de texto recostado a la izquierda con padding superior de 12vh -->
         <div class="hero-contenedor-texto">
             
-            <!-- HEADLINE IZQUIERDO: Interlínea de 1.15 y tamaño imponente de 3.2rem -->
+            <!-- HEADLINE: Separación elegante y statement rotundo -->
             <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 400 !important; line-height: 1.15 !important; margin-bottom: 0 !important; text-align: left !important; letter-spacing: 0.02em !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
             
-            <!-- SUBHEAD IZQUIERDO: Separación superior limpia de 24px, sin márgenes laterales automáticos -->
-            <p style="margin: 24px 0 0 0 !important; text-align: left !important; color: #ffffff !important; font-size: 15px !important; font-weight: 400 !important; line-height: 1.7 !important; background: transparent !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; padding: 0 !important; box-shadow: none !important; display: block !important; opacity: 0.9 !important;">
-                Soluciones jurídicas de alta complejidad para empresas digitales, Pymes en proceso de transformación digital y protagonistas de la economía moderna.
-            </p>
-            
-            <!-- CTA REFORZADO IZQUIERDO: Separación de 40px en bloque fluido -->
-            <a href="#contacto" class="boton-premium" style="display: inline-block !important; margin: 40px 0 0 0 !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 18px 42px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A880 !important; letter-spacing: 2.5px !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important;">AGENDAR CONSULTA CONFIDENCIAL</a>
+            <!-- 💡 CTA ACORTADO Y REFORZADO: Separación calibrada, copy compacto y contorno oro de 1.5px -->
+            <a href="#contacto" class="boton-premium" style="display: inline-block !important; margin: 35px 0 0 0 !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 36px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A880 !important; letter-spacing: 1.5px !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important;">AGENDAR CONSULTA</a>
         </div>
     </section>
+
 
 
     <!-- 3. SECCIÓN EL ESTUDIO -->
