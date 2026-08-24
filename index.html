@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-       <style>
-        .navbar-brand img, .logo img {
-            height: 65px !important;
-            width: auto !important;
-            max-height: none !important;
-        }
-        .navbar, nav {
-            padding-top: 15px !important;
-            padding-bottom: 15px !important;
-        }
-    </style>
-
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riganti, Geiler & Márquez Alluralde - Abogados</title>
+    
     <!-- Fuentes Corporativas de Élite --> 
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
        
     <style>
-        /* --- VARIABLES DE DISEÑO PREMIUM (ESTILO MARVAL & BECCAR VARELA) --- */
+        /* --- VARIABLES DE DISEÑO PREMIUM --- */
         :root {
             --color-primario: #070e1b;   /* Azul medianoche profundo */
             --color-secundario: #c5a880; /* Dorado satinado institucional */
@@ -48,73 +37,17 @@
             -webkit-font-smoothing: antialiased;
         }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 12%; 
-    background-color: rgba(7, 14, 27, 0.85); 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    /* Aplicamos el color dorado satinado a la base del header */
-    border-bottom: 1px solid rgba(197, 168, 128, 0.25);
-    backdrop-filter: blur(12px); 
-    -webkit-backdrop-filter: blur(12px); 
-    transition: all 0.3s ease;
-}
-
-.marca-estudio {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    height: 75px;                /* Altura perfecta y armónica para el header */
-}
-
-
-/* Estilo elegante para los nombres en blanco nítido */
-.texto-estudio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #ffffff !important;   /* Blanco puro para máxima legibilidad */
-    font-family: 'Cinzel', serif; /* Tu tipografía fina institucional */
-    letter-spacing: 2px;
-    line-height: 1.25;
-}
-
-.texto-estudio .apellido {
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.texto-estudio .sub-apellido {
-    font-size: 11px;
-    font-weight: 500;
-}
-
-.texto-estudio .rubro {
-    font-size: 8px;
-    color: #c5a880 !important;   /* El subtítulo "Abogados" en dorado satinado */
-    letter-spacing: 4px;
-    margin-top: 3px;
-}
-
-
-
-
-
         /* LÍNEA VERTICAL DIVISORIA EN ORO INSTITUCIONAL */
         .divisor-marca {
             height: 38px;                 
             width: 1.5px;                 
             background: linear-gradient(to bottom, transparent 0%, var(--color-secundario) 50%, transparent 100%);
-            margin-right: 20px;           /* Separación exacta antes de los apellidos */
+            margin-right: 20px;           
             flex-shrink: 0;               
             opacity: 0.85;                
         }
 
-        /* FORZADO TIPOGRÁFICO: Fuentes romanas clásicas con serifas */
+        /* FORZADO TIPOGRÁFICO */
         .nombre-estudio {
             font-family: var(--fuente-titulos) !important; 
             display: flex;
@@ -180,7 +113,7 @@ header {
             width: 100%;
         }
 
-  /* --- PORTADA PRINCIPAL --- */
+        /* --- PORTADA PRINCIPAL --- */
         .hero-principal {
             min-height: 100vh;
             display: flex;
@@ -193,41 +126,49 @@ header {
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         }
 
-               .hero-principal h1 {
+        .hero-principal h1 {
             font-family: var(--fuente-titulos);
             font-size: 3.2rem;
             color: #ffffff;
-            font-weight: 300;             /* 👈 Peso liviano y elegante */
+            font-weight: 300;             
             max-width: 950px;
             line-height: 1.35;
             margin-bottom: 25px;
-            letter-spacing: 0.04em;       /* 👈 Aire corregido en em para unificar con el logo */
+            letter-spacing: 0.04em;       
         }
 
         .hero-principal p {
-            color: #E5E8ED;               /* 👈 El color blanco roto/tiza de tu propuesta */
+            color: #E5E8ED;               
             font-size: 1.15rem;
-            font-weight: 300;
-            max-width: 720px;             /* 👈 Ancho de lectura idealizado */
-            text-align: center;          
-            margin: 0 auto 45px auto;    
-            line-height: 1.7;
         }
+    </style>
+</head>
+<body>
 
+<header style="display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 15px 12% !important; background-color: #070e1b !important; position: sticky !important; top: 0 !important; z-index: 1000 !important; border-bottom: 1px solid rgba(197, 168, 128, 0.2) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; height: 90px !important;">
+    
+    <!-- LADO IZQUIERDO: EL LOGO Y NOMBRE RECONSTRUIDO -->
+    <a href="#" class="marca-estudio" style="display: flex !important; align-items: center !important; text-decoration: none !important; height: 100% !important;">
+        <!-- Tu imagen de Photopea (Se busca en la carpeta img/) -->
+        <img src="img/nombre-logo-estudio.webp" alt="Isotipo RGM" style="height: 60px !important; width: auto !important; display: block !important; margin-right: 18px !important; object-fit: contain !important;">
+        
+        <!-- Nombre del bufete en la tipografía Cinzel en blanco nítido -->
+        <div style="display: flex !important; flex-direction: column !important; justify-content: center !important; font-family: 'Cinzel', serif !important; line-height: 1.25 !important; letter-spacing: 1.5px !important;">
+            <span style="color: #ffffff !important; font-size: 16px !important; font-weight: 700 !important; display: block !important;">RIGANTI, GEILER</span>
+            <span style="color: #ffffff !important; font-size: 12px !important; font-weight: 500 !important; display: block !important;">& MÁRQUEZ ALLURALDE</span>
+            <span style="color: #c5a880 !important; font-size: 9px !important; font-weight: 700 !important; letter-spacing: 5px !important; margin-top: 4px !important; display: block !important;">ABOGADOS</span>
+        </div>
+    </a>
 
-        .boton-premium {
-            display: inline-block;
-            padding: 18px 48px;           /* 👈 Más cuerpo para mejor usabilidad táctil */
-            border: 1.5px solid var(--color-secundario); /* 👈 Grosor aumentado a 1.5px para mobile */
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 2.5px;
-            font-weight: 600;             /* 👈 Peso de fuente aumentado para destacar la llamada a la acción */
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            background: transparent;
-        }
+    <!-- LADO DERECHO: LAS SECCIONES DEL MENÚ RECUPERADAS -->
+    <nav style="display: flex !important; align-items: center !important; gap: 30px !important;">
+        <a href="#inicio" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important; transition: color 0.3s !important;">Inicio</a>
+        <a href="#estudio" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important; transition: color 0.3s !important;">El Estudio</a>
+        <a href="#practicas" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important; transition: color 0.3s !important;">Prácticas</a>
+        <a href="#contacto" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important; transition: color 0.3s !important; border: 1px solid #c5a880 !important; padding: 8px 18px !important; border-radius: 2px !important; background-color: rgba(197, 168, 128, 0.1) !important;">Contacto</a>
+    </nav>
+</header>
+
 
         .boton-premium:hover {
             background-color: #C5A253;    /* 👈 Dorado premium exclusivo de la auditoría en hover */
@@ -390,228 +331,235 @@ header {
         }
 
 
-                /* --- CONTACTO Y FORMULARIO --- */
-        .contenedor-contacto {
-            display: grid;
-            grid-template-columns: 1fr 1.3fr;
-            gap: 70px;
-        }
+/* --- CONTACTO Y FORMULARIO --- */
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 70px;
+}
 
-        .info-contacto h3 {
-            font-family: var(--fuente-titulos);
-            font-size: 1.5rem;
-            color: var(--color-primario);
-            margin-bottom: 30px;
-        }
+.info-contacto h3 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    color: var(--color-primario);
+    margin-bottom: 30px;
+}
 
-        .bloque-dato {
-            margin-bottom: 25px;
-        }
+.bloque-dato {
+    margin-bottom: 25px;
+}
 
-        .bloque-dato label {
-            display: block;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--color-secundario);
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
+.bloque-dato label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-secundario);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
 
-        .bloque-dato p {
-            font-size: 0.95rem;
-        }
+.bloque-dato p {
+    font-size: 0.95rem;
+}
 
-        .formulario-contacto {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 
-        .campo-ancho {
-            grid-column: span 2;
-        }
+.campo-ancho {
+    grid-column: span 2;
+}
 
-        .formulario-contacto input, .formulario-contacto textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #e2e8f0;
-            font-family: var(--fuente-cuerpo);
-            font-size: 0.85rem;
-            outline: none;
-            background-color: var(--color-fondo-claro);
-            transition: all 0.3s;
-        }
+.formulario-contacto input, .formulario-contacto textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    font-family: var(--fuente-cuerpo);
+    font-size: 0.85rem;
+    outline: none;
+    background-color: var(--color-fondo-claro);
+    transition: all 0.3s;
+}
 
-        .formulario-contacto input:focus, .formulario-contacto textarea:focus {
-            border-color: var(--color-secundario);
-            background-color: #ffffff;
-        }
+.formulario-contacto input:focus, .formulario-contacto textarea:focus {
+    border-color: var(--color-secundario);
+    background-color: #ffffff;
+}
 
-        .boton-enviar {
-            grid-column: span 2;
-            padding: 16px;
-            background-color: var(--color-primario);
-            color: #ffffff;
-            border: none;
-            font-family: var(--fuente-cuerpo);
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 2px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
+.boton-enviar {
+    grid-column: span 2;
+    padding: 16px;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    border: none;
+    font-family: var(--fuente-cuerpo);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
 
-        .boton-enviar:hover {
-            background-color: #1a2a44;
-        }
+.boton-enviar:hover {
+    background-color: #1a2a44;
+}
 
-        /* --- TALENTO & FOOTER --- */
-        .seccion-talento {
-            position: relative;
-            background-size: cover;
-            background-position: center center; 
-            padding: 140px 12%; 
-            text-align: center;
-            color: #ffffff;
-            font-family: var(--fuente-cuerpo);
-        }
+/* --- TALENTO & FOOTER --- */
+.seccion-talento {
+    position: relative;
+    background-size: cover;
+    background-position: center center; 
+    padding: 140px 12%; 
+    text-align: center;
+    color: #ffffff;
+    font-family: var(--fuente-cuerpo);
+}
 
-        .contenido-talento {
-            max-width: 650px;
-            margin: 0 auto;
-        }
+.contenido-talento {
+    max-width: 650px;
+    margin: 0 auto;
+}
 
-        .subtitulo-talento {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            color: var(--color-secundario);
-            display: block;
-            margin-bottom: 10px;
-        }
+.subtitulo-talento {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--color-secundario);
+    display: block;
+    margin-bottom: 10px;
+}
 
-        .marca-talento {
-            font-size: 42px;
-            font-weight: 700;
-            margin: 0 0 20px 0;
-            letter-spacing: 2px;
-            font-family: var(--fuente-titulos);
-        }
+.marca-talento {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    font-family: var(--fuente-titulos);
+}
 
-        .descripcion-talento {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            margin-bottom: 35px;
-            opacity: 0.9;
-        }
+.descripcion-talento {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
 
-        .btn-talento {
-            display: inline-block;
-            background-color: var(--color-secundario);
-            color: var(--color-primario);
-            text-decoration: none;
-            padding: 14px 35px;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            border-radius: 2px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+.btn-talento {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    text-decoration: none;
+    padding: 14px 35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: background-color 0.3s, transform 0.2s;
+}
 
-        .btn-talento:hover {
-            background-color: #b0936b;
-            transform: translateY(-2px);
-        }
+.btn-talento:hover {
+    background-color: #b0936b;
+    transform: translateY(-2px);
+}
 
-        footer {
-            background-color: var(--color-primario);
-            color: #ffffff;
-            padding: 80px 12% 40px 12%;
-            border-top: 1px solid rgba(197, 168, 128, 0.1);
-        }
+footer {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    padding: 80px 12% 40px 12%;
+    border-top: 1px solid rgba(197, 168, 128, 0.1);
+}
 
-        .bloques-footer {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 50px;
-            margin-bottom: 60px;
-        }
+.bloques-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-bottom: 60px;
+}
 
-        .columna-footer h4 {
-            font-family: var(--fuente-titulos);
-            color: var(--color-secundario);
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 25px;
-            font-weight: 500;
-        }
+.columna-footer h4 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-secundario);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
 
-        .columna-footer p {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-            line-height: 1.7;
-        }
+.columna-footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
 
-        .columna-footer ul {
-            list-style: none;
-        }
+.columna-footer ul {
+    list-style: none;
+}
 
-        .columna-footer ul li {
-            margin-bottom: 12px;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-        }
+.columna-footer ul li {
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
 
-        .footer-inferior {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.5);
-        }
+.footer-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
 
-        .footer-inferior a {
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+.footer-inferior a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s;
+}
 
-        .footer-inferior a:hover {
-            color: var(--color-secundario);
-        }
+.footer-inferior a:hover {
+    color: var(--color-secundario);
+}
 
-        .barra-flotante-contacto {
-            position: fixed;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            gap: 2px; 
-        }
+/* --- BARRA FLOTANTE LATERAL INTERACTIVA --- */
+.barra-flotante-contacto {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 2px; 
+}
 
-        .item-flotante {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            background-color: #070e1b; 
-            border-left: 2px solid #c5a880; 
-            color: #ffffff;
-            text-decoration: none;
-            height: 50px;
-            min-width: 50px;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            overflow: hidden;
-        }
+.item-flotante {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #070e1b; 
+    border-left: 2px solid #c5a880; 
+    color: #ffffff;
+    text-decoration: none;
+    height: 50px;
+    min-width: 50px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+}
 
-        .icono-flotante {
+/* Animación sutil de despliegue al pasar el mouse por los botones laterales */
+.item-flotante:hover {
+    background-color: #111a2e;
+    padding-left: 15px;
+    transform: translateX(-5px);
+}
+.icono-flotante {
             width: 50px;
             height: 50px;
             display: flex;
@@ -631,10 +579,6 @@ header {
             transition: opacity 0.3s ease;
         }
 
-        .item-flotante:hover {
-            padding-left: 20px;
-        }
-
         .item-flotante:hover .texto-flotante {
             opacity: 1;
             margin-right: 15px;
@@ -642,8 +586,8 @@ header {
 
         /* --- RESPONSIVE DESIGN --- */
         @media (max-width: 992px) {
-            header { padding: 20px 5%; flex-direction: column; gap: 15px; }
-            nav ul { gap: 20px; }
+            header { padding: 20px 5% !important; flex-direction: column !important; gap: 15px !important; height: auto !important; }
+            nav ul { gap: 20px !important; }
             section { padding: 100px 5%; }
             .hero-principal { clip-path: none; -webkit-clip-path: none; padding-bottom: 100px; }
             .contenedor-estudio, .contenedor-contacto { grid-template-columns: 1fr; gap: 50px; }
@@ -654,7 +598,27 @@ header {
 </head>
 <body>
 
-    <!-- BARRA FLOTANTE INTERACTIVA LATERAL (SIN SVG) -->
+    <!-- 1. ENCABEZADO PRINCIPAL (EL LOGO, NOMBRE BLANCO Y MENÚ RESTAURADOS) -->
+    <header style="display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 15px 12% !important; background-color: #070e1b !important; position: sticky !important; top: 0 !important; z-index: 1000 !important; border-bottom: 1px solid rgba(197, 168, 128, 0.2) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; height: 90px !important;">
+        <a href="#" class="marca-estudio" style="display: flex !important; align-items: center !important; text-decoration: none !important; height: 100% !important;">
+            <img src="img/nombre-logo-estudio.webp" alt="Isotipo RGM" style="height: 60px !important; width: auto !important; display: block !important; margin-right: 18px !important; object-fit: contain !important;">
+            <div style="display: flex !important; flex-direction: column !important; justify-content: center !important; font-family: 'Cinzel', serif !important; line-height: 1.25 !important; letter-spacing: 1.5px !important;">
+                <span style="color: #ffffff !important; font-size: 16px !important; font-weight: 700 !important; display: block !important;">RIGANTI, GEILER</span>
+                <span style="color: #ffffff !important; font-size: 12px !important; font-weight: 500 !important; display: block !important;">& MÁRQUEZ ALLURALDE</span>
+                <span style="color: #c5a880 !important; font-size: 9px !important; font-weight: 700 !important; letter-spacing: 5px !important; margin-top: 4px !important; display: block !important;">ABOGADOS</span>
+            </div>
+        </a>
+        <nav style="display: flex !important; align-items: center !important;">
+            <ul style="display: flex !important; list-style: none !important; gap: 40px !important; margin: 0 !important; padding: 0 !important;">
+                <li><a href="#inicio" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important;">Inicio</a></li>
+                <li><a href="#estudio" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important;">El Estudio</a></li>
+                <li><a href="#practicas" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important;">Prácticas</a></li>
+                <li><a href="#contacto" style="color: #ffffff !important; text-decoration: none !important; font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; letter-spacing: 1px !important; border: 1px solid #c5a880 !important; padding: 8px 18px !important; border-radius: 2px !important; background-color: rgba(197, 168, 128, 0.1) !important;">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. BARRA FLOTANTE INTERACTIVA LATERAL -->
     <div class="barra-flotante-contacto">
         <a href="#contacto" class="item-flotante" title="Escribir Correo">
             <span class="texto-flotante">CONTACTO</span>
@@ -673,63 +637,30 @@ header {
             <div class="icono-flotante">🌐</div>
         </a>
     </div>
-<a href="#" class="marca-estudio" style="display: flex !important; align-items: center !important; text-decoration: none !important; height: 85px !important; padding: 5px 0 !important;">
-    <!-- Tu nuevo archivo transparente (Solo símbolo + barra vertical dorada) -->
-    <img src="nombre-logo-estudio.webp" alt="Isotipo RGM" style="height: 60px !important; width: auto !important; display: block !important; margin-right: 18px !important; object-fit: contain !important;">
-    
-    <!-- Bloque de texto con la tipografía oficial Cinzel en blanco -->
-    <div style="display: flex !important; flex-direction: column !important; justify-content: center !important; font-family: 'Cinzel', serif !important; line-height: 1.25 !important; letter-spacing: 1.5px !important;">
-        <span style="color: #ffffff !important; font-size: 16px !important; font-weight: 700 !important; display: block !important;">RIGANTI, GEILER</span>
-        <span style="color: #ffffff !important; font-size: 12px !important; font-weight: 500 !important; display: block !important;">& MÁRQUEZ ALLURALDE</span>
-        <span style="color: #c5a880 !important; font-size: 9px !important; font-weight: 700 !important; letter-spacing: 5px !important; margin-top: 4px !important; display: block !important;">ABOGADOS</span>
-    </div>
-</a>
-
-
-    
-        </a>
-        <nav>
-            <ul style="display: flex; list-style: none; gap: 40px; margin: 0; padding: 0;">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#estudio">El Estudio</a></li>
-                <li><a href="#practicas">Prácticas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
- <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
+            
+    <!-- PORTADA CON VIDEO DE FONDO -->
     <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-        
-        <!-- El elemento de video con parámetros de forzado institucional -->
         <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;">
             <source src="video-rgma.mp4" type="video/mp4">
             Tu navegador no soporta videos.
         </video>
-
-                <!-- Capa protectora de contraste calibrada al 60% de opacidad -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(7, 14, 27, 0.55), rgba(7, 14, 27, 0.65)); z-index: 2;"></div>
-
-        <!-- Textos institucionales equilibrados sobre el video ambiental -->
-       <div style="position: relative; z-index: 3; text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
+        <div style="position: relative; z-index: 3; text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto;">
             <h1>Trayectoria Legal con una Perspectiva de Vanguardia</h1>
             <p style="margin: 20px auto 40px auto; max-width: 750px; text-align: center; color: rgba(255, 255, 255, 0.75); font-size: 1.15rem; font-weight: 300; line-height: 1.6;">
                 Brindamos soluciones jurídicas estratégicas de alta complejidad para empresas tecnológicas, Pymes en proceso de transformación digital y protagonistas de la economía moderna.
             </p>
-            
             <a href="#contacto" class="boton-premium">Agendar consulta confidencial</a>
         </div>
     </section>
 
-  <section id="estudio">
+    <section id="estudio">
         <div class="encabezado-seccion">
-                       <h2>El Estudio</h2>
+            <h2>El Estudio</h2>
             <div class="linea-decorativa"></div>
             <p>Un compromiso absoluto con la excelencia técnica en la intersección entre el derecho empresarial tradicional y la innovación de vanguardia.</p>
         </div>
         <div class="contenedor-estudio">
-            
-            <!-- Columna Izquierda: Manifiesto Institucional - Bufete de Alta Especialización -->
             <div class="texto-estudio" style="font-family: var(--fuente-cuerpo); font-size: 1rem; line-height: 1.8; color: #333333; font-weight: 300;">
                 <p style="margin-bottom: 25px;">
                     Somos un <strong>bufete de alta especialización</strong> corporativa orientado a estructurar, potenciar y proteger los negocios del futuro. Nos distanciamos de los modelos de atención masiva e impersonal: operamos bajo una estructura de práctica selectiva, lo que nos permite garantizar que cada asunto encomendado reciba el análisis minucioso y el involucramiento directo de nuestros socios fundadores.
@@ -738,8 +669,6 @@ header {
                     Nuestra identidad combina la rigurosidad jurídica institucional con la agilidad que exigen los mercados modernos. Diseñamos arquitectura legal y fiduciaria a medida, planificaciones fiscales dinámicas, estrategias de propiedad intelectual transfronteriza y litigaciones de alta complejidad, proporcionando soluciones de alcance nacional con proyección regional.
                 </p>
             </div>
-            
-            <!-- Columna Derecha: Pilares Estratégicos -->
             <div class="lista-valores">
                 <div class="tarjeta-valor">
                     <h4>Rigurosidad Técnica</h4>
@@ -747,93 +676,92 @@ header {
                 </div>
                 <div class="tarjeta-valor">
                     <h4>Transición Digital</h4>
-                    <p>Guiamos a las Pymes en la adopción segura de herramientas de IA, gobernanza de datos y reestructuración legal hacia la nueva economía.</p>
+                    <p>Guiamos a las Pymes en la adoption segura de herramientas de IA, gobernanza de datos y reestructuración legal hacia la nueva economía.</p>
                 </div>
-                <!-- Pilar 3 -->
                 <div class="tarjeta-valor">
                     <h4>Múltiples Jurisdicciones y Mercosur</h4>
                     <p>Brindamos asesoramiento en múltiples jurisdicciones, estructurando soluciones adaptadas a las normativas de cada provincia y los mercados de la región.</p>
                 </div>
-                <!-- Pilar 4 -->
                 <div class="tarjeta-valor">
                     <h4>Transparencia e Integridad</h4>
                     <p>Estrecha confidencialidad y una ética inquebrantable en cada gestión institucional y defensa estratégica encomendada.</p>
                 </div>
-            </div> <!-- Cierra lista-valores -->
-        </div> <!-- Cierra contenedor-estudio -->
-    </section> <!-- Cierra la sección completa -->
+            </div>
+        </div>
+    </section>
 
-<!-- SECCIÓN ÁREAS DE PRÁCTICA -->
-<section id="practicas" style="background-color: var(--color-fondo-claro);">
-    <div class="encabezado-seccion">
-        <h2>Áreas de Práctica</h2>
-        <div class="linea-decorativa"></div>
-        <p>Asesoramiento jurídico de vanguardia enfocado en tecnología, innovación, salud y el ecosistema digital en Argentina.</p>
-    </div>
-    
+    <!-- SECCIÓN ÁREAS DE PRÁCTICA -->
+    <section id="practicas" style="background-color: var(--color-fondo-claro);">
+        <div class="encabezado-seccion">
+            <h2>Áreas de Práctica</h2>
+            <div class="linea-decorativa"></div>
+            <p>Asesoramiento jurídico de vanguardia enfocado en tecnología, innovación, salud y el ecosistema digital en Argentina.</p>
+        </div>
+           <!-- Contenedor Grid que agrupa todas las tarjetas -->
     <div class="grid-corporativo">
-                <!-- Tarjeta 1: Startups y Negocios Digitales -->
+
+        <!-- Tarjeta 1: Startups y Negocios Digitales (Completa) -->
         <div class="tarjeta-corporativa">
             <h3><a href="startups.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Startups y Negocios Digitales ➔</a></h3>
-            <p>Acompañamos a fundadores desde el día uno, ordenando su estructura para escalar y recibir inversión sin sorpresas legales.</p>
-            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
+            <p>Acompañamos a fundadores desde el día uno, ordenando su estructura corporativa para escalar y recibir rondas de inversión internacionales.</p>
+            <ul>
                 <li>Armado de SAS, SRL y pactos de socios (Vesting).</li>
-                <li>Notas convertibles, SAFEs y rondas de capital.</li>
-                <li>Estructuras de exportación de servicios y Flips.</li>
+                <li>Estructuración de Notas Convertibles y acuerdos SAFEs.</li>
+                <li>Asesoramiento integral en rondas de financiamiento ángel y Venture Capital.</li>
             </ul>
         </div>
 
-        <!-- Tarjeta 2: Creadores de Contenido e Influencers -->
+        <!-- Tarjeta 2: Propiedad Intelectual y Tecnología -->
         <div class="tarjeta-corporativa">
-            <h3><a href="creadores.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Creadores de Contenido e Influencers ➔</a></h3>
-            <p>Asesoramos a creadores, streamers y agencias en la negociación de sus contratos para que hagan valer su trabajo y aseguren sus ingresos.</p>
-            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
-                <li>Contratos de patrocinio, marcas y uso de imagen.</li>
-                <li>Monetización, Twitch, YouTube y cobros del exterior.</li>
-                <li>Defensa ante cierres de cuentas, robos y strikes.</li>
+            <h3><a href="tecnologia.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Propiedad Intelectual y Tech ➔</a></h3>
+            <p>Protegemos tus activos más valiosos en la economía del conocimiento a través de estrategias registrales y contractuales robustas.</p>
+            <ul>
+                <li>Registro de marcas, patentes y software ante el INPI.</li>
+                <li>Redacción de términos de servicio y políticas de privacidad (GDPR / LPDP).</li>
+                <li>Contratos de desarrollo tecnológico y licencias de software (Saas).</li>
             </ul>
         </div>
 
-        <!-- Tarjeta 3: Derecho Deportivo -->
+        <!-- Tarjeta 3: Derecho de la Salud y Biotecnología -->
         <div class="tarjeta-corporativa">
-            <h3><a href="deportivo.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Derecho Deportivo ➔</a></h3>
-            <p>Asesoramos a futbolistas, atletas, agentes y clubes en la gestión de sus contratos, transferencias y regulaciones específicas.</p>
+            <h3><a href="salud.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Salud & Biotecnología ➔</a></h3>
+            <p>Asesoramiento especializado en marcos regulatorios complejos para plataformas de salud digital, laboratorios y desarrollos biotecnológicos.</p>
+            <ul>
+                <li>Cumplimiento e inscripciones ante la ANMAT y normativas del sector.</li>
+                <li>Estructuración legal de servicios de telemedicina y recetas electrónicas.</li>
+                <li>Protección y gobernanza avanzada de datos sensibles y clínicos.</li>
+            </ul>
+        </div>
+        <!-- Tarjeta 4: Transformación Digital y Pymes -->
+        <div class="tarjeta-corporativa">
+            <h3><a href="transformacion-pymes.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Transformación Digital & Pymes ➔</a></h3>
+            <p>Estructuramos la migración segura de empresas tradicionales hacia el ecosistema digital, mitigando riesgos operativos y contractuales.</p>
             <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
-                <li>Fichajes, contratos Ley 20.160 y pases internacionales.</li>
-                <li>Derechos de formación y Mecanismo de Solidaridad FIFA.</li>
-                <li>Representación y litigios ante el TAS y federaciones.</li>
+                <li>Auditoría de contratos tecnológicos e implementación de firmas digitales.</li>
+                <li>Políticas de teletrabajo y cumplimiento normativo laboral digital.</li>
+                <li>Asesoramiento legal en adopción de herramientas de Inteligencia Artificial.</li>
             </ul>
         </div>
 
-        <!-- Tarjeta 4: Inteligencia Artificial y Datos -->
+        <!-- Tarjeta 5: Derecho Corporativo y Tributario Dinámico -->
         <div class="tarjeta-corporativa">
-            <h3><a href="ia-datos.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Inteligencia Artificial y Datos ➔</a></h3>
-            <p>Estructuramos esquemas de gobernanza para mitigar riesgos regulatorios en el entrenamiento y despliegue de modelos de IA complejos.</p>
+            <h3><a href="corporativo-tributario.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Corporativo y Tributario ➔</a></h3>
+            <p>Diseñamos ingeniería societaria y planificaciones fiscales optimizadas para entornos económicos de alta volatilidad y transfronterizos.</p>
             <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
-                <li>Auditorías de sesgo, privacidad y cumplimiento legal.</li>
-                <li>Estrategias de propiedad intelectual transfronteriza.</li>
-                <li>Contratos de licenciamiento de datos y transferencia tecnológica.</li>
-            </ul>
-        </div>
-        <!-- Tarjeta 5: Propiedad Intelectual y Marcas -->
-        <div class="tarjeta-corporativa">
-            <h3><a href="propiedad-intelectual.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Propiedad Intelectual y Marcas ➔</a></h3>
-            <p>Protegemos y potenciamos activos intangibles a nivel nacional e internacional, resguardando la innovación corporativa.</p>
-            <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
-                <li>Registro de marcas, patentes, software y derechos de autor.</li>
-                <li>Estrategias de defensa ante plagios y competencia desleal.</li>
-                <li>Contratos de confidencialidad, franquicias y licencias.</li>
+                <li>Reestructuraciones societarias, fusiones y adquisiciones (M&A).</li>
+                <li>Planificación fiscal estratégica nacional y convenios de doble imposición.</li>
+                <li>Gobernanza corporativa, directorios y auditorías de cumplimiento (Compliance).</li>
             </ul>
         </div>
 
-        <!-- Tarjeta 6: Derecho de la Salud y Amparos -->
+        <!-- Tarjeta 6: Litigios Complejos y Resolución de Conflictos -->
         <div class="tarjeta-corporativa">
-            <h3><a href="amparos-salud.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Derecho de la Salud y Amparos ➔</a></h3> 
-            <p>Estructuramos litigios estratégicos contra obras sociales y prepagas, y asesoramos a instituciones médicas en los desafíos de la medicina moderna.</p>
+            <h3><a href="litigios.html" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--color-secundario)'" onmouseout="this.style.color='inherit'">Litigios y Resolución de Conflictos ➔</a></h3>
+            <p>Defendemos los intereses de la firma en controversias comerciales complejas, arbitrajes institucionales y reclamos regulatorios.</p>
             <ul style="list-style: none; padding: 0; margin-top: 15px; font-size: 0.9em; opacity: 0.85; text-align: left;">
-                <li>Amparos urgentes por medicación de alto costo, prótesis y tratamientos.</li>
-                <li>Conflictos de cobertura por prestaciones por discapacidad (Ley 24.901).</li>
-                <li>Regulación en Telemedicina, ensayos clínicos y responsabilidad médica.</li>
+                <li>Representación en litigios comerciales, civiles y contencioso-administrativos.</li>
+                <li>Arbitrajes locales de alta complejidad y mediaciones estratégicas.</li>
+                <li>Estrategias de prevención de disputas contractuales de gran envergadura.</li>
             </ul>
         </div>
 
