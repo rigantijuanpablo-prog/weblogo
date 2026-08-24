@@ -11,17 +11,21 @@
     <link href="https://googleapis.com" rel="stylesheet">
    
     <style>
-        /* --- ARREGLO DE BARRA BLANCA Y TU CONTRASTE GRADUAL INTEGRADO --- */
+              /* --- PORTADA CON TU PROPUESTA DE FUSION COMPUESTA --- */
         .hero-principal {
             margin-top: 0 !important;
             padding-top: 0 !important;
+            position: relative;
+            overflow: hidden;
+            background-color: #070e1b;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start !important;
+            /* 💡 Tu truco de box-shadow inset para fundir los últimos píxeles suavemente con la sección blanca */
+            box-shadow: inset 0 -120px 80px rgba(10, 15, 26, 0.6) !important;
         }
 
-        .hero-principal h1 {
-            margin-top: 0 !important;
-        }
-
-                    /* 💡 DEGRADADO DEFINITIVO CALIBRADO: Luz natural de punta a punta y máxima claridad */
         .hero-principal::before {
             content: "" !important;
             position: absolute !important;
@@ -30,26 +34,26 @@
                 180deg,
                 rgba(5, 15, 25, 0.25) 0%,
                 rgba(5, 15, 25, 0.30) 60%,
-                rgba(5, 15, 25, 0.55) 100%
+                rgba(10, 15, 26, 0.55) 85%,
+                rgba(10, 15, 26, 0.90) 100%
             ) !important;
             z-index: 2 !important;
         }
 
-
-        /* 💡 CONFIGURACIÓN ASIMÉTRICA CON PADIND-TOP CALIBRADO */
+        /* 💡 Ajustamos la altura al 14vh para romper la simetría central y elevar el bloque */
         .hero-contenedor-texto {
             position: relative;
             z-index: 3;
             text-align: left !important;
             max-width: 680px !important;
             margin: 0 auto 0 12% !important;
-            padding-top: 12vh !important; /* 👈 Genera el aire premium respecto al header azul */
+            padding-top: 14vh !important; /* 👈 Eleva levemente el H1 sobre la línea media */
         }
 
-        .hero-contenedor-texto h1, 
-        .hero-contenedor-texto p {
+        .hero-contenedor-texto h1 {
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.75), 0 2px 5px rgba(0, 0, 0, 0.9) !important;
         }
+
 
 
 
@@ -693,8 +697,8 @@
 
 
    
-         <!-- PORTADA ASIMÉTRICA ULTRA MINIMALISTA (SIN SUBTÍTULO) -->
-    <section id="inicio" class="hero-principal" style="display: flex !important; justify-content: flex-start !important; align-items: center !important;">
+         <!-- PORTADA CON COMPOSICIÓN GEOMÉTRICA DE ÉLITE -->
+    <section id="inicio" class="hero-principal">
         
         <!-- El elemento de video de fondo ambiental -->
         <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;">
@@ -705,16 +709,17 @@
         <!-- Capa HTML vacía transparente de control -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
        
-        <!-- Contenedor de texto recostado a la izquierda con padding superior de 12vh -->
+        <!-- Contenedor de texto recostado a la izquierda -->
         <div class="hero-contenedor-texto">
             
-            <!-- HEADLINE: Separación elegante y statement rotundo -->
+            <!-- HEADLINE -->
             <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 400 !important; line-height: 1.15 !important; margin-bottom: 0 !important; text-align: left !important; letter-spacing: 0.02em !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
             
-            <!-- 💡 CTA ACORTADO Y REFORZADO: Separación calibrada, copy compacto y contorno oro de 1.5px -->
-            <a href="#contacto" class="boton-premium" style="display: inline-block !important; margin: 35px 0 0 0 !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 36px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A880 !important; letter-spacing: 1.5px !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important;">AGENDAR CONSULTA</a>
+            <!-- 💡 CTA ACERCADO: Reducido a 32px de margen para sellar el bloque visual H1+Botón -->
+            <a href="#contacto" class="boton-premium" style="display: inline-block !important; margin: 32px 0 0 0 !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 36px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A880 !important; letter-spacing: 1.5px !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important;">AGENDAR CONSULTA</a>
         </div>
     </section>
+
 
 
 
