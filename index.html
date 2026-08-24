@@ -68,17 +68,44 @@ header {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0;
-    height: auto;
+    height: 75px;                /* Altura perfecta y armónica para el header */
 }
 
-.logo-premium {
-    height: 75px !important;
+/* Forzamos que la imagen del símbolo + barra dorada crezca de forma proporcional */
+.logo-dorado-barra {
+    height: 70px !important;     /* Altura imponente para que luzca el diseño */
     width: auto !important;
-    max-width: 380px !important;
-    display: block !important;
-    flex-shrink: 0;
+    display: block;
     object-fit: contain;
+    margin-right: -10px;         /* Ajuste sutil para acercar los nombres al gráfico si es necesario */
+}
+
+/* Estilo elegante para los nombres en blanco nítido */
+.texto-estudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff !important;   /* Blanco puro para máxima legibilidad */
+    font-family: 'Cinzel', serif; /* Tu tipografía fina institucional */
+    letter-spacing: 2px;
+    line-height: 1.25;
+}
+
+.texto-estudio .apellido {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.texto-estudio .sub-apellido {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.texto-estudio .rubro {
+    font-size: 8px;
+    color: #c5a880 !important;   /* El subtítulo "Abogados" en dorado satinado */
+    letter-spacing: 4px;
+    margin-top: 3px;
 }
 
 
@@ -654,12 +681,19 @@ header {
             <div class="icono-flotante">🌐</div>
         </a>
     </div>
-       <!-- ENCABEZADO INSTITUCIONAL CON MARCA UNIFICADA EN BLANCO (ALTURA COMPENSADA) -->
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 12%; background-color: rgba(7, 14, 27, 0.78); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(197, 168, 128, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all 0.3s ease;">
-       <a href="#" class="marca-estudio">
-    <img src="marca-oficial.webp" alt="Riganti, Geiler & Márquez Alluralde" style="height: 75px !important; width: auto !important; max-width: 380px !important; display: block !important;">
-</a>
 
+   <a href="#" class="marca-estudio">
+    <!-- El archivo .webp que contiene el símbolo y la barra en dorado -->
+    <img src="marca-oficial.webp" alt="Isotipo RGM" class="logo-dorado-barra">
+    
+    <!-- Los nombres de los integrantes en texto HTML real y blanco puro -->
+    <div class="texto-estudio">
+        <span class="apellido">RIGANTI, GEILER</span>
+        <span class="sub-apellido">& MÁRQUEZ ALLURALDE</span>
+        <span class="rubro">ABOGADOS</span>
+    </div>
+</a>
+    
         </a>
         <nav>
             <ul style="display: flex; list-style: none; gap: 40px; margin: 0; padding: 0;">
