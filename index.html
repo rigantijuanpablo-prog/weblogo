@@ -323,11 +323,11 @@
         }
 
         /* 👈 NUEVA VIÑETA GEOMÉTRICA EN ORO INSTITUCIONAL */
-               /* Quita los guiones sueltos del HTML y da estructura limpia a las listas */
-        .tarjeta-corporativa ul {
+            .tarjeta-corporativa ul {
             list-style: none;
             padding: 0;
             margin-top: 20px;
+            overflow: hidden; /* 👈 Muy importante: recorta lo que saquemos de la tarjeta */
         }
 
         .tarjeta-corporativa ul li {
@@ -338,19 +338,24 @@
             color: var(--color-texto-suave);
             text-align: left;
             line-height: 1.5;
+            
+            /* 🛠 EL TRUCO SANEADOR DE GUIONES MANURALES */
+            text-indent: -12px; /* 👈 Empuja el guion "-" escrito hacia la izquierda para sacarlo de escena */
+            margin-left: 12px;  /* 👈 Devuelve el texto a su posición original para que no se desfase */
         }
 
-        /* Dibuja la viñeta geométrica institucional en oro */
+        /* Dibuja tu cuadrado dorado impecable en su lugar exacto */
         .tarjeta-corporativa ul li::before {
-            content: '';
+            content: ''; 
             position: absolute;
-            left: 0;
+            left: -12px; /* 👈 Ajustamos la posición para que quede alineado al texto oculto */
             top: 7px;
             width: 6px;
             height: 6px;
             background-color: var(--color-secundario); 
             border-radius: 1px;
         }
+
 
                 /* --- CONTACTO Y FORMULARIO --- */
         .contenedor-contacto {
