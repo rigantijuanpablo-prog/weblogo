@@ -319,22 +319,29 @@
         }
 
         /* 👈 NUEVA VIÑETA GEOMÉTRICA EN ORO INSTITUCIONAL */
+               /* Quita los guiones sueltos del HTML y da estructura limpia a las listas */
+        .tarjeta-corporativa ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
         .tarjeta-corporativa ul li {
             position: relative;
             padding-left: 20px;
-            margin-bottom: 10px;
-            list-style: none; /* Remueve el check original del HTML */
+            margin-bottom: 12px;
             font-size: 0.88rem;
             color: var(--color-texto-suave);
             text-align: left;
+            line-height: 1.5;
         }
 
-        /* Dibuja el pequeño cuadrado dorado premium */
+        /* Dibuja la viñeta geométrica institucional en oro */
         .tarjeta-corporativa ul li::before {
             content: '';
             position: absolute;
             left: 0;
-            top: 9px;
+            top: 7px;
             width: 6px;
             height: 6px;
             background-color: var(--color-secundario); 
@@ -626,18 +633,25 @@
     </div>
 
     <!-- ENCABEZADO INSTITUCIONAL CON ISOLOGOTIPO ASIGNADO -->
-    <header>
-        <a href="#" class="marca-estudio">
-            <!-- Renderizado del Isologotipo del Estudio -->
-            <img src="logo-dorado-transparente-removebg-preview.webp" alt="Logo Riganti, Geiler & Márquez Alluralde" class="logo-premium">
-            <div class="divisor-marca"></div>
-            <div class="nombre-estudio">
-                <span class="apellido-principal">RIGANTI, GEILER</span>
-                <span class="apellido-secundario">& MÁRQUEZ ALLURALDE</span>
+    <!-- ENCABEZADO INSTITUCIONAL DE ÉLITE -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 18px 12%; background-color: rgba(7, 14, 27, 0.78); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(197, 168, 128, 0.15); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: all 0.3s ease;">
+        <a href="#" class="marca-estudio" style="display: flex; align-items: center; text-decoration: none; gap: 0;">
+            <!-- Isologotipo dorado puro -->
+            <img src="isologotipo.webp" alt="Logo Riganti" class="logo-premium" style="height: 42px; width: auto; object-fit: contain; margin-right: 15px; display: block;">
+            
+            <!-- Barra vertical divisoria ajustada al texto -->
+            <div class="divisor-marca" style="height: 32px; width: 1px; background: linear-gradient(to bottom, transparent, var(--color-secundario) 50%, transparent); margin-right: 15px; opacity: 0.85;"></div>
+            
+            <!-- Bloque tipográfico refinado -->
+            <div class="nombre-estudio" style="font-family: var(--fuente-titulos); display: flex; flex-direction: column; justify-content: center; line-height: 1.15;">
+                <span class="apellido-principal" style="color: #ffffff; font-size: 1.15rem; font-weight: 500; letter-spacing: 0.5px;">RIGANTI, GEILER</span>
+                <span class="apellido-secundario" style="color: rgba(255, 255, 255, 0.9); font-size: 0.88rem; font-weight: 400; letter-spacing: 0.5px; margin-top: 1px;">
+                    <span style="font-family: 'Cinzel', serif; font-style: italic; color: var(--color-secundario); font-weight: 500; margin-right: 2px;">&</span> MÁRQUEZ ALLURALDE
+                </span>
             </div>
         </a>
         <nav>
-            <ul>
+            <ul style="display: flex; list-style: none; gap: 40px;">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#estudio">El Estudio</a></li>
                 <li><a href="#practicas">Prácticas</a></li>
@@ -645,6 +659,7 @@
             </ul>
         </nav>
     </header>
+
  <!-- PORTADA CON VIDEO DE FONDO Y MÁSCARA ANGULAR FORZADA -->
     <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
         
