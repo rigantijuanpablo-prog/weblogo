@@ -160,26 +160,27 @@
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
         }
 
-        .hero-principal h1 {
+               .hero-principal h1 {
             font-family: var(--fuente-titulos);
-            font-size: 3.2rem;            /* 👈 Aumentado ligeramente para mayor impacto visual */
+            font-size: 3.2rem;
             color: #ffffff;
-            font-weight: 300;             /* 👈 Peso liviano y elegante (estilo boutique), no bold */
+            font-weight: 300;             /* 👈 Peso liviano y elegante */
             max-width: 950px;
             line-height: 1.35;
             margin-bottom: 25px;
-            letter-spacing: 2px;          /* 👈 Tracking corregido a +6% para unificar con la marca */
+            letter-spacing: 0.04em;       /* 👈 Aire corregido en em para unificar con el logo */
         }
 
         .hero-principal p {
-            color: rgba(255, 255, 255, 0.9); /* 👈 Mayor contraste (subido de 0.75 a 0.9) para que no se pierda */
+            color: #E5E8ED;               /* 👈 El color blanco roto/tiza de tu propuesta */
             font-size: 1.15rem;
             font-weight: 300;
-            max-width: 750px;
+            max-width: 720px;             /* 👈 Ancho de lectura idealizado */
             text-align: center;          
             margin: 0 auto 45px auto;    
             line-height: 1.7;
         }
+
 
         .boton-premium {
             display: inline-block;
