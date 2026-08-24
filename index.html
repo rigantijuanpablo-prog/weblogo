@@ -37,15 +37,22 @@
 
 
 
+             /* 💡 ALINEACIÓN ASIMÉTRICA PREMIUM A LA IZQUIERDA */
         .hero-contenedor-texto {
             position: relative;
-            z-index: 3; /* Flota sobre el degradado */
+            z-index: 3;
+            text-align: left !important; /* 👈 Forzamos la lectura natural a la izquierda */
+            max-width: 680px !important; /* 👈 Caja compacta para que no tape el edificio */
+            margin: 0 auto 0 12% !important; /* 👈 12% clava el bloque en la misma línea que tu logo */
+            padding-top: 5vh;
         }
 
+        /* Tu efecto de relieve reforzado para contraste AAA */
         .hero-contenedor-texto h1, 
         .hero-contenedor-texto p {
-            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6) !important; /* Tu efecto de letra flotante */
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.75), 0 2px 5px rgba(0, 0, 0, 0.9) !important;
         }
+
 
         
         /* --- VARIABLES DE DISEÑO PREMIUM (ESTILO MARVAL & BECCAR VARELA) --- */
@@ -687,37 +694,34 @@
 
 
    
-        <!-- PORTADA CON TU FILTRO GRADUAL INTELIGENTE -->
-    <section id="inicio" class="hero-principal" style="position: relative; overflow: hidden; background-color: #070e1b; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin-top: 0 !important;">
+         <!-- PORTADA CON DISEÑO ASIMÉTRICO ORIENTADO A LA IZQUIERDA -->
+    <section id="inicio" class="hero-principal" style="display: flex !important; justify-content: flex-start !important; align-items: center !important;">
         
-        <!-- El elemento de video de fondo -->
+        <!-- El elemento de video de fondo ambiental -->
         <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; z-index: 1; transform: translate(-50%, -50%); object-fit: cover;">
             <source src="video-rgma.mp4" type="video/mp4">
             Tu navegador no soporta videos.
-      </video>
-        
-        <!-- 💡 LA ETICA RECONSTRUIDA: Capa de degradado nativa que sostiene tu propuesta de contraste gradual -->
-               </video>
-        
-        <!-- 💡 La capa HTML vacía ahora queda 100% transparente para que solo actúe tu CSS de arriba -->
+        </video>
+
+        <!-- Capa HTML vacía transparente de control -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
        
-               <!-- Contenedor de texto (Flota limpio sobre el degradado) -->
-        <div class="hero-contenedor-texto" style="text-align: center; color: #ffffff; max-width: 900px; padding: 0 20px; margin: 0 auto; position: relative; z-index: 3;">
+        <!-- Contenedor de texto recostado a la izquierda -->
+        <div class="hero-contenedor-texto">
             
-            <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 300 !important; line-height: 1.35 !important; margin-bottom: 25px !important; letter-spacing: 0.04em !important; text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6) !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
+            <!-- HEADLINE IZQUIERDO: Interlínea de 1.15 y tamaño imponente de 3.2rem -->
+            <h1 style="font-family: var(--fuente-titulos) !important; font-size: 3.2rem !important; font-weight: 400 !important; line-height: 1.15 !important; margin-bottom: 0 !important; text-align: left !important; letter-spacing: 0.02em !important;">Trayectoria Legal con una Perspectiva de Vanguardia</h1>
             
-            <!-- 💡 SUBTÍTULO CALIBRADO: Escala reducida a 0.95em e interlínea estirada a 1.7 para máxima elegancia -->
-            <p style="margin: 20px auto 0 auto !important; max-width: 750px !important; text-align: center !important; color: #ffffff !important; font-size: 0.95em !important; font-weight: 400 !important; line-height: 1.7 !important; background: transparent !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; padding: 0 !important; box-shadow: none !important; text-shadow: 0 2px 12px rgba(0,0,0,0.8) !important; display: block !important;">
+            <!-- SUBHEAD IZQUIERDO: Separación superior limpia de 24px, sin márgenes laterales automáticos -->
+            <p style="margin: 24px 0 0 0 !important; text-align: left !important; color: #ffffff !important; font-size: 15px !important; font-weight: 400 !important; line-height: 1.7 !important; background: transparent !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; padding: 0 !important; box-shadow: none !important; display: block !important; opacity: 0.9 !important;">
                 Soluciones jurídicas de alta complejidad para empresas digitales, Pymes en proceso de transformación digital y protagonistas de la economía moderna.
             </p>
             
-                        <!-- 💡 BOTÓN PREMIUM DEFINITIVO: 100% transparente y libre de efectos de desenfoque -->
-            <a href="#contacto" class="boton-premium" style="display: inline-block !important; margin-top: 40px !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 16px 36px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A880 !important; letter-spacing: 2.5px !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important;">AGENDAR CONSULTA CONFIDENCIAL</a>
+            <!-- CTA REFORZADO IZQUIERDO: Separación de 40px en bloque fluido -->
+            <a href="#contacto" class="boton-premium" style="display: inline-block !important; margin: 40px 0 0 0 !important; background: transparent !important; color: #ffffff !important; text-decoration: none !important; padding: 18px 42px !important; font-size: 0.9rem !important; text-transform: uppercase !important; font-weight: 600 !important; border-radius: 2px !important; transition: all 0.3s ease !important; border: 1.5px solid #C5A880 !important; letter-spacing: 2.5px !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important;">AGENDAR CONSULTA CONFIDENCIAL</a>
         </div>
     </section>
 
-    </section> <!-- 💡 CORREGIDO: Cerramos la sección hero de forma segura para aislar el video -->
 
     <!-- 3. SECCIÓN EL ESTUDIO -->
     <section id="estudio">
