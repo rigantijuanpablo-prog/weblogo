@@ -12,7 +12,7 @@
    
     <style>
         
-        /* --- PORTADA CON TU DIAGONAL PREMIUM IMPONENTE Y VISIBLE --- */
+             /* --- PORTADA CON TU DIAGONAL INVERTIDA PREMIUM (ALTA A LA IZQUIERDA) --- */
         .hero-principal {
             margin-top: 0 !important;
             padding-top: 0 !important;
@@ -25,12 +25,10 @@
             justify-content: flex-start !important;
             box-shadow: inset 0 -120px 80px rgba(10, 15, 26, 0.6) !important;
             
-            /* 💡 CONTROL ABSOLUTO DE CORTE ANGULAR: Nace visible en la izquierda (90vh) y sube drásticamente en la derecha (72vh) */
-            clip-path: polygon(0 0, 100% 0, 100% 72vh, 0 90vh) !important;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 72vh, 0 90vh) !important;
+            /* 💡 INVERSIÓN TOTAL DE SENTIDO: Alta en la izquierda (75vh) y bajando hacia la derecha (92vh) */
+            clip-path: polygon(0 0, 100% 0, 100% 92vh, 0 75vh) !important;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 92vh, 0 75vh) !important;
         }
-
-
 
         
         .hero-principal::before {
