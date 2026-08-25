@@ -11,7 +11,7 @@
     <link href="https://googleapis.com" rel="stylesheet">
    
     <style>
-                       /* --- PORTADA CON TU DIAGONAL PREMIUM ACENTUADA A LA IZQUIERDA --- */
+                            /* --- PORTADA PURA CON COLORES NATURALES AL 100% --- */
         .hero-principal {
             margin-top: 0 !important;
             padding-top: 0 !important;
@@ -22,43 +22,32 @@
             display: flex;
             align-items: center;
             justify-content: flex-start !important;
-            box-shadow: inset 0 -120px 80px rgba(10, 15, 26, 0.6) !important;
             
-            /* 💡 PENDIENTE ULTRA AGRESIVA: Subimos el origen izquierdo al 64% (64vh) para disparar la inclinación */
+            /* 💡 MÁSCARA DIAGONAL ASIMÉTRICA INTEGRADA */
             clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 64vh) !important;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 89vh) !important;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 64vh) !important;
         }
 
-
-        
+        /* ❌ ELIMINAMOS EL GRADIENT AZULADO: La capa ::before queda desactivada para liberar el color de la foto */
         .hero-principal::before {
-            content: "" !important;
-            position: absolute !important;
-            inset: 0 !important;
-            background: linear-gradient(
-                180deg,
-                rgba(5, 15, 25, 0.25) 0%,
-                rgba(5, 15, 25, 0.30) 60%,
-                rgba(10, 15, 26, 0.55) 85%,
-                rgba(10, 15, 26, 0.90) 100%
-            ) !important;
-            z-index: 2 !important;
+            display: none !important;
         }
 
-        /* 💡 Ajustamos la altura al 14vh para romper la simetría central y elevar el bloque */
         .hero-contenedor-texto {
             position: relative;
             z-index: 3;
             text-align: left !important;
             max-width: 680px !important;
             margin: 0 auto 0 12% !important;
-            padding-top: 14vh !important; /* 👈 Eleva levemente el H1 sobre la línea media */
+            padding-top: 14vh !important;
         }
 
+        /* 💡 RELIEVE DE CONTRASTE AAA: Sombra de texto reforzada en un tono oscuro neutro puro 
+           para que las letras blancas floten de forma nítida sobre el verde natural del parque */
         .hero-contenedor-texto h1 {
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.75), 0 2px 5px rgba(0, 0, 0, 0.9) !important;
+            text-shadow: 0 4px 24px rgba(7, 14, 27, 0.85), 0 2px 6px rgba(7, 14, 27, 0.95) !important;
         }
-
+ 
 
 
 
