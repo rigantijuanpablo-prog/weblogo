@@ -616,7 +616,7 @@
             .contenedor-estudio, .contenedor-contacto { grid-template-columns: 1fr; gap: 50px; }
             .formulario-contacto input, .formulario-contacto textarea, .boton-enviar { grid-column: span 2; }
         }
-        /* --- BOTÓN PREMIUM CON EFECTO HOVER DE ALTA GAMA --- */
+             /* --- BOTÓN PREMIUM CON CONTRASTE DE PIEDRA CORPORATIVA #C8B090 --- */
         .btn-premium-final {
             display: inline-block !important;
             margin: 32px 0 0 0 !important;
@@ -628,23 +628,28 @@
             text-transform: uppercase !important;
             font-weight: 600 !important;
             border-radius: 2px !important;
-            border: 1.5px solid #C5A880 !important;
+            
+            /* 💡 COLOR PREMIUM SELECCIONADO: Tono piedra satinado institucional */
+            border: 1.5px solid #C8B090 !important;
             letter-spacing: 2px !important;
             backdrop-filter: none !important;
             -webkit-backdrop-filter: none !important;
             box-shadow: none !important;
             text-shadow: 0 2px 8px rgba(7, 14, 27, 0.5) !important;
             
-            /* Transición fluida de 0.3 segundos para el cambio de color */
-            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
+            /* 💡 TRANSICIÓN TOTAL SUAVE DE 0.3s (Cubre posición, color y fondo) */
+            transition: all 0.3s ease !important;
         }
 
-        /* 💡 EL FIX DEL EFECTO: Al posarse encima, se rellena de dorado sólido y la letra pasa al azul profundo */
+        /* 💡 EL FIX DEL EFECTO HOVER: Relleno en piedra premium, letra azul profundo y micro-salto vertical */
         .btn-premium-final:hover {
-            background-color: #C5A880 !important; /* Dorado satinado oficial */
-            color: #070e1b !important;            /* Azul medianoche de tu fondo */
-            text-shadow: none !important;          /* Quitamos la sombra para máxima nitidez */
-            box-shadow: 0 12px 24px rgba(197, 168, 128, 0.2) !important; /* Destello sutil inferior */
+            background-color: #C8B090 !important; /* Relleno color piedra de élite */
+            color: #070e1b !important;            /* El azul medianoche profundo de tu fondo */
+            text-shadow: none !important;          
+            box-shadow: 0 12px 24px rgba(200, 176, 144, 0.15) !important; 
+            
+            /* 💡 TU TRUCO PRO: El botón flota 1px hacia arriba de manera líquida */
+            transform: translateY(-1px) !important;
         }
 
 
